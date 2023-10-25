@@ -25,7 +25,7 @@ require_once($head);
 <div class="section">
 	<a href="/recipes.php"><img src="/assets/banners/recipeweek.png" width="210", height="50" /></a>
 
-<p>A veritable cookery encyclopedia with every recipe you could ever dream of.</p>
+<p>A veritable bollocks encyclopedia with every recipe you could ever dream of.</p>
 </div>
 <!--section2-->
 <div class="section">
