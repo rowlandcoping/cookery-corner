@@ -1,3 +1,5 @@
 rsync -a /home/master/repos/cookery-corner/ /var/www/html
 
+/home/master/rsync-continuous /home/master/repos/cookery-corner/ /var/www/html
+
 ctrl-z to stop!
