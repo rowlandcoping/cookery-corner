@@ -1,0 +1,100 @@
+/*UNIVERSAL*/
+
+body	{
+background-image:url(/assets/backgrounds/brown.png);
+color: #D4AF37;
+}
+div.title	{
+background-color:#7ffffe;
+padding: 10px;
+margin-bottom:10px;
+border-radius: 6px 6px 6px 6px;
+}
+div.form	{
+margin:0 auto;
+text-align:center;
+background-image:url(/assets/backgrounds/brown.png);
+}
+div.section	{
+width:450px;
+margin:10px auto;
+background-image:url(/assets/backgrounds/wall.png);
+padding:10px;
+border-style: ridge;
+border-color: #D4AF37;
+border-radius: 20px 20px 20px 20px;
+}
+ul.form li, ul.form2 li	{
+float:left;
+}
+textarea, input {
+border-radius: 5px;
+background-color: #180317;
+color: #D4AF37;
+}
+div.form a	{
+color:#903e0d
+}
+div.form a:hover	{
+color:#A97833;
+}
+input[type=submit] {
+width: 10em;  height: 2em;
+font-size:1.2em;
+font-weight: bold;
+border-radius: 10px;
+padding:2;
+}
+input[name=email]	{ 
+position:absolute;
+left:-2000px;
+}
+
+/*PUBLIC LOGIN*/
+
+ul.form2	{
+list-style:none;
+height:20px;
+}
+#email2	{
+ margin:0px 6px 0px 55px;
+}
+#password2	{
+ margin:0px 5px 0px 37px;
+}
+#input	{
+}
+
+/*REGISTER USER*/
+
+div.list_section	{
+width:470px;
+overflow:hidden;
+margin:10px auto;
+background-image:url(/assets/backgrounds/wall.png);
+padding:15px 0px 0px 0px;
+border-style: ridge;
+border-color: #D4AF37;
+border-radius: 20px 20px 20px 20px;
+}
+ul.form	{
+list-style:none;
+height:35px;
+}
+#name{margin:0px 0px 0px 40px;} #inputname {margin:0px 0px 0px 42px;}
+#exp{margin:-6px 0px 0px 5px;} #inputexp {margin:0px 0px 0px 27px;}
+#email{margin:0px 0px 0px 45px;} #inputemail {margin:0px 0px 0px 73px;}
+#password{margin:0px 0px 0px 34px;}  #inputpassword {margin:0px 0px 0px 65px;}
+#passconf{margin:0px 0px 0px 8px;}  #inputpassconf {margin:0px 0px 0px 34px;}
+#propic{margin:0px 0px 0px 14px;}  #inputpropic {margin:0px 0px 0px 34px;}
+
+
+
+
+
+
+
+
+
+
+

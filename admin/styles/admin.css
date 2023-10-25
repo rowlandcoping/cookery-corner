@@ -1,0 +1,239 @@
+/* UNIVERSAL */
+@font-face {
+font-family: 'Trebuchet_Internal';
+src: url("/assets/fonts/Trebuchet_MS_Bold_Italic.ttf");
+font-style: italic;
+font-style: bold;
+}
+@font-face {
+font-family: 'Trebuchet_Internal';
+src: url("/assets/fonts/Trebuchet_MS_Bold.ttf");
+font-style: bold;
+}
+@font-face {
+font-family: 'Trebuchet_Internal';
+src:url("/assets/fonts/Trebuchet_MS_Italic.ttf");
+font-style: italic;
+}
+@font-face {
+font-family: 'Trebuchet_Internal';
+src:url("/assets/fonts/Trebuchet_MS.ttf");
+}
+
+head,body	{
+font-family: Trebuchet_Internal;
+font-size: 0.95em;
+line-height: 110%;
+}
+div.section1, div.left, div.section2, div.section3, div.regular, div.regular2, div.overall, div.information, div.profile	{
+border-radius: 6px 6px 6px 6px;
+border-color: #008000;
+border-style:ridge;
+}
+div.section1	{
+background-color:#91ff77;
+margin:10px 10px 30px 10px;
+}
+div.section	{
+padding:10px;
+overflow: hidden;
+text-align: center;
+}
+div.left	{
+background-color:#ffffff;
+overflow: hidden;
+margin:10px 20px 10px 0px;
+float:left;
+padding: 10px;
+}
+h2	{
+padding:10px;
+}
+hr	{
+color:#008000;
+}
+ul	{
+list-style:none;
+height:20px;
+}
+li	{
+text-align:left;
+float:left;
+}
+div a	{
+text-decoration:none;
+}
+div.left h4	{
+margin:0px 0px 4px 0px;
+}
+input.button {
+	margin:20px;
+    width: 20em;  height: 2em;
+    font-size:1.2em;
+    font-weight: bold;
+    border-radius: 10px;
+    padding:2;
+}
+
+/* LIST FORMATTING (BASIC PAGES) */
+
+#recipe {margin:0px 0px 0px -12px;}#recform {margin:0px 8px 10px 9px;}
+p.info {margin:0px 0px -14px 0px;}
+
+/* RECIPE SECTIONS */
+
+div.section2	{
+background-color:#ffffa7;
+margin:0px 10px 30px 10px;
+}
+div.section3	{
+background-color:#ffa3a6;
+margin:0px 10px 30px 10px;
+}
+div.ingredients, div.holding	{
+padding:10px;
+overflow: hidden;
+}
+div.regular	{
+background-color:#ffffff;
+padding:10px;
+margin:10px;
+width:625;
+}
+#serves{margin:-1px 0px 0px 25px;}#serform{margin:-1px 0px 0px 9px;}
+#cuisine{margin:2px 0px 0px -17px;}#cuisform{margin:2px 10px 0px 10px;}
+#category{margin:2px 0px 0px -29px;}#catform{margin:2px 10px 0px 10px;}
+#keywords{margin:0px 0px 0px 10px;}#keyform{margin:0px 8px 10px 9px;}
+#image{margin:-4px 0px 0px -24px;}#imgform{margin:-4px 8px 10px 10px;
+}
+p.caption1 {margin:0px 0px 0px 26px;color:grey;font-size:0.75em;}
+p.caption2 {margin:0px 0px 0px 23px;color:grey;font-size:0.75em;}
+p.caption3 {margin:3px 0px 0px -75px;color:grey;font-size:0.75em;
+}
+div.ingredients h4{
+padding:10px 10px 0px 0px;
+overflow: hidden;
+}
+div.listing p{
+margin:0px 0px 0px 5px;
+}
+div.regular h4{
+padding:15px 0px -7px 0px;
+}
+#quant{margin:2px 5px 0px -25px;}
+#quantform{margin:0px 0px 0px 0px;}
+#ing{margin:2px 5px 0px -35px;}
+#ingform{margin:0px 0px 0px 0px;
+}
+input.ingsearch{
+background-color: #4CAF50;
+}
+
+/*RECIPE CATEGORY UPDATE PAGES*/
+
+div.regular2	{
+background-color:#ffffff;
+padding:10px;
+margin:10px;
+width:800px;
+}
+
+/*ADMIN PAGES*/
+
+div.overall	{
+background-color:#00FFFF;
+margin:10px 10px 30px 10px;
+}
+div.user	{
+padding:10px;
+overflow: hidden;
+}
+img.segment{
+margin:3px 0px 0px 0px;
+}
+div.information	{
+background-color:#ededed;
+overflow: hidden;
+float:left;
+
+padding: 8px 8px 8px 8px;
+margin: 0px 20px 10px 0px;
+}
+div.profile	{
+background-color:#ededed;
+overflow: hidden;
+float:left;
+padding: 8px 8px 8px 8px;
+margin: 0px 20px 0px 0px;
+}
+div.profilecont	{
+overflow:hidden;
+padding:10px 10px 10px 10px;
+margin:10px 10px 10px 1px;
+}
+div.profileimg	{
+vertical-align:top;
+float:right;
+text-align:center;
+margin: -10px 5px 9px 5px;
+padding: 8px 8px 10px 8px;
+border-style: solid;
+border-radius:6px 6px 6px 6px;
+border-color: #008000;
+}
+div.menutree{
+float:left;
+display:inline-block;
+margin: 0px 0px 15px 0px;
+}
+div.text	{
+margin: 0px 0px 0px 0px;
+padding: 0px 0px 0px 0px;
+}
+div.text h2	{
+margin:-5px 0px -7px -10px;
+}
+div.profileimg h2	{
+margin:-0px 0px -10px 0px;
+}
+div.information h4	{
+margin:-0px 0px 2px 0px;
+}
+div.information h2	{
+margin:-5px 0px -5px 0px;
+padding:0px, 0px, 0px, 0px;
+}
+h3.indent	{
+margin:4px 0px 0px 35px;
+}
+h3.indent2	{
+margin:4px 0px 0px 70px;
+}
+
+/*notifications section - note I'm trying divs instead of ul to do this shit*/
+
+div.notification{padding:2px; min-width:580px;}
+div.close, div.icon, div.date, div.from, div.subject, div.open, div.bar, div.title{float:left;}
+div.notification h4, div.notification form{margin:0px; padding:0px;}
+div.subjectbar, div.header, div.msgbar {overflow: hidden;text-align:center;}
+div.header {font-weight:bold; border-style:solid; border-width:1px 0px 1px 0px; padding:0px 0px 0px 0px;height: 19px; }
+div.message{padding:0px 20px 5px 50px; border-style:solid; border-width:0px 0px 1px 0px;}
+div.subjectbar {height: 21px; border-style:solid; border-width:0px 0px 1px 0px; margin:0px 0px 1px 0px;}
+div.msgbar {margin:0px 0px 1px 0px;}
+
+div.open, div.close {width:60px;} 
+div.icon {width:55px;}
+div.date {width:80px;}
+div.from {width:150px;}
+div.subject{width:150px;}
+div.title {width:200px;}
+div.bar {margin:0px 0px 0px 0px; font-weight:bold;}
+
+
+/*Live blog / general messages delete pages     */
+
+table.notifications th{border-style:solid; border-width:1px 0px 1px 0px;}
+
+
+
+

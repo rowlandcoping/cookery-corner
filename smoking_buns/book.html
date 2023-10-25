@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+
+    <title>Smoking Buns</title>
+</head>
+
+<body>
+    <header class="container-fluid text-center" id="header-container">
+        <div class="row d-flex align-items-center">
+            <img class="col-3 col-sm-2 col-xl-1 logo-left" src="assets/images/logos/gun-left.svg"
+                alt="A smoking pistol sandwiched in a burger bun, pointing right">
+            <h1 class="col-6 col-sm-8 col-xl-4">
+                Smoking Buns
+            </h1>
+            <img class="col-3 col-sm-2 col-xl-1 logo-right" src="assets/images/logos/gun-right.svg"
+                alt="A smoking pistol sandwiched in a burger bun, pointing left">
+            <nav class="col-12 col-xl-6 nav-wrapper">
+                <ul id="navigation" class="list-group list-group-horizontal flex-fill">
+                    <li class="col-3 list-group-item menu-main">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="col-3 list-group-item menu-main">
+                        <a href="menu.html">Menu</a>
+                    </li>
+                    <li class="col-3 list-group-item menu-main">
+                        <a href="about.html">About</a>
+                    </li>
+                    <li class="col-3 list-group-item menu-main">
+                        <a id="current" href="book.html">Book</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="bookings-wrapper">
+        <div class="form-wrapper">
+            <h2>Come Eat With Us</h2>
+            <form action="submit.html" method="post">
+                <section class="booking-container">
+                        <div class="form-personal">
+                            <h3>Your Details</h3>
+                            <hr class="booking-divider">
+                            <ul class="list-details">
+                                <li>
+                                    <label for="name">Name: <span class="red-text">*</span></label>
+                                    <input id="name" type="text" name="name" required>
+                                </li>
+                                <li>
+                                    <label for="email">e-mail: <span class="red-text">*</span></label> 
+                                    <input id="email" type="email" name="email" required>
+                                </li>
+                                <li>
+                                    <label for="size">Party Size: <span class="red-text">*</span></label>
+                                    <input id="size" type="text" name="size" required>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="form-visit">
+                            <h3>Your Visit</h3>
+                            <hr class="booking-divider">     
+                            <ul class="list-details">
+                                <li>
+                                    <label for="time-select">Select a Time: <span class="red-text">*</span></label>
+                                    <select id="time-select" name="time" required>
+                                        <option></option>
+                                        <option value="17:00">05:00 PM</option>
+                                        <option value="17:15">05:15 PM</option>
+                                        <option value="17:30">05:30 PM</option>
+                                        <option value="17:45">05:45 PM</option>
+                                        <option value="18:00">06:00 PM</option>
+                                        <option value="18:15">06:15 PM</option>
+                                        <option value="18:30">06:30 PM</option>
+                                        <option value="18:45">06:45 PM</option>
+                                        <option value="19:00">07:00 PM</option>
+                                        <option value="19:15">07:15 PM</option>
+                                        <option value="19:30">07:30 PM</option>
+                                        <option value="19:45">07:45 PM</option>
+                                        <option value="20:00">08:00 PM</option>
+                                        <option value="20:15">08:15 PM</option>
+                                        <option value="20:30">08:30 PM</option>
+                                        <option value="20:45">08:45 PM</option>
+                                        <option value="21:00">09:00 PM</option>
+                                    </select>
+                                </li>
+                                <li>    
+                                    <label for="date">Select a Date: <span class="red-text">*</span></label>
+                                    <input id="date" type="date"  name="date"
+                                    min="2023-06-16" max="2100-06-16" size="15" required>
+                                </li>
+                                <li>
+                                    <label for="requests">Special Requests:</label>
+                                    <textarea id="requests" name="requests" placeholder="Enter any requests here"></textarea>
+                                </li>
+                            </ul>                        
+                        </div>       
+                </section>
+                <a class="button-wrap"href="submit.html"><input type="button" class="book-button" value="Book Now!"></a>
+            </form>
+        </div>
+        <div class="location-wrapper">
+            <h2>Where to Find Us</h2>
+            <section class="location-container">               
+                <div class="map-details">
+                    <h3>Our Location</h3>
+                    <hr class="booking-divider">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2433.8261488237777!2d-4.087695687613653!3d52.40982697191588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486f76f86a472a29%3A0x50b64b7645321b7e!2sTrefechan%2C%20Aberystwyth%20SY23%201BE!5e0!3m2!1sen!2suk!4v1686924697211!5m2!1sen!2suk" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="address-details">
+                    <h3>Our Address</h3>
+                    <hr class="booking-divider">
+                    <p>2 Ty Ceffyl Du
+                    <br>Aberystwyth
+                    <br>SY23 1BE</p>
+                </div>
+            </section>
+        </div>
+    </div>
+    <footer class="container-fluid" id="footer-container">
+        <div class="row d-flex align-items-center">
+            <div class="col-4 social-links">
+                <ul class="list-group list-group-horizontal flex-fill">
+                    <li class="col-4 list-group-item social">
+                        <a href="https://www.snapchat.com/" target="_blank"><img
+                                src="assets/images/logos/snapchat.svg" alt="The Snapchat Logo, which is kind of a ghost or bell thing on a bright yellow background."></a>
+                    </li>
+                    <li class="col-4 list-group-item social">
+                        <a href="https://www.insatagram.com/" target="_blank"><img
+                                src="assets/images/logos/insta.png" alt="The Instagram logo, which looks like a line drawing of a camera, in purple on white."></a>
+                    </li>
+                    <li class="col-4 list-group-item social">
+                        <a href="https://www.facebook.com/" target="_blank"><img
+                                src="assets/images/logos/facebook.png" alt="The facebook logo, which is a lower case white letter f on a blue background"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-8 review-links">
+                <ul class="list-group list-group-horizontal flex-fill">
+                    <li class="col-4 list-group-item reviews">
+                        <a href="https://www.tripadvisor.com/" target="_blank"><img
+                                src="assets/images/logos/tripadvisor.svg" alt="The Tripadvisor logo, which is an owlface next to the word 'Tripadvisor'"></a>
+                    </li>
+                    <li class="col-4 list-group-item reviews">
+                        <a href="https://www.google.com/maps/" target="_blank"><img
+                                src="assets/images/logos/greviews.png" alt="A Google Reviews logo, which is the word Google in multiple colors with the word reviews in smaller type beneath it"></a>
+                    </li>
+                    <li class="col-4 list-group-item social">
+                        <a href="https://uk.trustpilot.com/" target="_blank"><img
+                                src="assets/images/logos/trustpilot.png" alt="The Trustpilot logo, which is the word Trustpilot next to a green star, with 5 white stars on a green background beneath it"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

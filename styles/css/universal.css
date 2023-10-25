@@ -1,0 +1,155 @@
+
+/*FONTS AND FORMATTING*/
+
+@font-face {
+      font-family: pencilpete; /* CAN BE ANYTHING YOU WANT */
+      src: url("/assets/fonts/Pencilpetefont-844B.otf");
+}
+
+@font-face {
+      font-family: sara;
+      src: url("/assets/fonts/SaraScribbles.ttf");
+} 
+ 
+@font-face {
+      font-family: chalk;
+      src: url("/assets/fonts/Chalk Board.ttf");
+}
+@font-face {
+      font-family: tuck;
+      src: url("/assets/fonts/TuckShop-Regular.otf");
+}
+      
+@font-face {
+font-family: 'Trebuchet_Internal';
+src: url("/assets/fonts/Trebuchet_MS_Bold_Italic.ttf");
+font-style: italic;
+font-style: bold;
+}
+@font-face {
+font-family: 'Trebuchet_Internal';
+src: url("/assets/fonts/Trebuchet_MS_Bold.ttf");
+font-style: bold;
+}
+@font-face {
+font-family: 'Trebuchet_Internal';
+src:url("/assets/fonts/Trebuchet_MS_Italic.ttf");
+font-style: italic;
+}
+@font-face {
+font-family: 'Trebuchet_Internal';
+src:url("/assets/fonts/Trebuchet_MS.ttf");
+}
+
+head,body {
+font-family: Trebuchet_Internal;
+font-size: 0.95em;
+line-height: 115%
+}
+div.page {
+}
+h1, h2 {
+margin: 0px;
+border:0px;
+padding: 5px 0px 10px 0px;
+line-height: 90%;
+}
+h3 {
+margin: 0px;
+border:0px;
+padding: 0px 0px 10px 0px;
+}
+img {
+border: none; 
+vertical-align: middle;
+}
+hr {
+clear:both;
+}
+
+/*BANNERS*/
+
+/*top banners*/
+div.title {
+overflow:auto;
+border-radius: 6px 6px 6px 6px;
+}
+div.title_bann {
+text-align: left;
+}
+div.banner {
+margin:5px 0px 0px 0px;
+text-align: right;
+float:right;
+}
+
+/*right banner*/
+
+div.right {
+float:right;
+vertical-align:top;
+text-align:right;
+width:120px;
+margin:10px 0px 0px 0px;
+}
+
+/*MENU*/
+
+div.menubar {
+	overflow:hidden;
+	margin: 0px 0px 0px 0px;
+	background-color: #008000;
+    border-radius: 6px 6px 6px 6px;
+}
+div.menubar ul {
+margin:10px;
+padding:0;
+list-style:none;
+float: left;
+}
+div.menubar ul li {
+float: left;
+margin:0px
+}
+#line {
+margin-right:10px;
+margin-left:10px;
+}
+#homeimg, #aboutimg,#recipeimg, #blogimg, #reviewimg, #forumimg, #contactimg, #linksimg, #indeximg {
+	margin-right:3px;
+}
+div.loginfo {
+background-color: #008000;
+float:right;
+vertical-align:top;
+text-align:right;
+margin: 8px 0px 0px 0px;
+padding: 0px 0px 0px 0px;
+}
+div.loginfo p {
+margin:1px 0px 1px 0px;
+font-size:1.1em;
+font-weight: bold;
+}
+
+div.menulog {
+background-color: #008000;
+margin: 0px 0px 0px 0px;
+border-radius: 6px 6px 6px 6px;
+margin: 0px 0px 0px 0px;
+padding: 0px 8px 0px 0px;
+clear:both;
+overflow: hidden;
+}
+div.loginfo a {
+text-decoration: none;
+}
+div.loginfo a:hover {
+color: #FF0000;
+text-decoration: none;
+}
+
+a.logname {
+color: #800000;
+}
+

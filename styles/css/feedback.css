@@ -1,0 +1,113 @@
+div.feedback
+{
+}
+body
+{
+background-color:#4b2f12;
+
+}
+
+div.title
+
+{
+background-color:#e4cb9a;
+padding: 10px;
+margin:0px 0px 10px 0px;
+}
+
+
+div.left
+
+{
+vertical-align:top;
+left:9px;
+position:absolute;
+width:120px;
+}
+
+div.main
+{
+color: #453f42;
+position:absolute;
+vertical-align:top;
+left:10px;
+right:130px;
+padding: 10px 30px 20px 30px;
+margin:10px 0px 0px 0px;
+background-color:#e4cb9a;
+}
+
+
+div.contribution
+{
+color:#2c257a;
+}
+
+
+div.image
+
+
+{
+float:right;
+vertical-align:top;
+text-align:center;
+margin: 20px 0px 10px 20px;
+}
+
+
+div.header
+{
+padding: 0px 0px 0px 0px;
+margin: 0px 0px 20px 0px;
+}
+
+div.header p
+{
+font-size:1.125em;
+}
+
+
+img.updates
+{
+margin:30px 0px 0px 0px;
+}
+
+b.sub
+
+{
+font-size:1.25em
+}
+
+.main h1, h2
+
+{
+margin: 0px;
+border:0px;
+padding: 10px 0px 5px 0px;
+}
+
+hr.end
+{
+clear:both;
+}
+
+.main a:link {color:#453f42;}       
+.main a:hover {color:#9e6225;} 
+
+ul.contact {
+    margin:0px 0px 20px 0px;
+    padding:0px;
+    list-style:none;
+    height:41px;
+}
+
+ul.contact li
+
+{
+    float: left;
+}
+
+#contacttext 
+{
+margin:10px 0px 0px 15px;
+}

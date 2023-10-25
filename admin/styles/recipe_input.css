@@ -1,0 +1,31 @@
+/* UNIVERSAL PAGES */
+
+div.section1{
+background-color:#808080;
+margin: 20px 0px 10px 0px;
+border-radius: 6px 6px 6px 6px;
+padding: 8px 8px 8px 8px;
+clear:both;
+overflow: hidden;
+}
+
+/* REVIEW & LIVEBLOG SECTIONS */
+
+div.left	{
+background-color:#ededed;
+overflow: hidden;
+float:left;
+padding: 8px 8px 8px 8px;
+margin: 0px 20px 0px 0px;
+border-radius: 6px 6px 6px 6px;
+}
+div.middle	{
+background-color:#ededed;
+overflow: hidden;
+padding: 8px 8px 8px 8px;
+margin: 0px 0px 0px 0px;
+border-radius: 6px 6px 6px 6px;
+}
+label.textarea	{
+  vertical-align: top;
+}

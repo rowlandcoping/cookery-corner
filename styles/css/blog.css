@@ -1,0 +1,178 @@
+/*MAIN LAYOUT*/
+
+body	{	
+background-image: url(/assets/backgrounds/desk.jpeg);
+color:#3f3f3f;
+}
+article.blogcont, nav.history	{
+background-image: url(/assets/backgrounds/linedpaper.jpeg);
+}
+div.container	{
+background-image: url(/assets/backgrounds/greenleather.jpeg);
+overflow:hidden;
+margin: 0px 0px 17px 0px;
+border-radius: 20px 20px 20px 20px;
+padding: 14px 14px 14px 14px;
+}
+div.title	{
+background-image: url(/assets/backgrounds/blogstripe.bmp);
+padding: 0px;
+margin-bottom:10px;
+border-radius: 6px 6px 6px 6px;
+}
+div.banner {
+margin:15px 10px 0px 0px;
+}
+div.right	{
+margin:0px 0px 0px 0px;
+}
+div.main	{
+padding: 0px 30px 20px 30px;
+margin:10px 0px 0px 0px;
+border-radius: 6px 6px 6px 6px;
+}
+
+/*HISTORY SECTION*/
+
+nav.history	{
+float:right;
+vertical-align:top;
+margin: 17px 45px 20px 0px;
+width:275px;
+}
+div.historytext	{
+margin: 17px;
+padding: 0px 0px 0px 0px;
+}
+nav.history a	{
+color:#1f517c;
+}
+nav.history a:hover	{
+color:#123656;
+}
+
+/*BLOG CONTENT*/
+
+article.blogcont	{
+overflow:hidden;
+padding:15px 25px 15px 25px;
+margin:20px 375px 20px 45px;
+}
+figure.blogimgright	{
+float:right;
+vertical-align:top;
+text-align:center;
+margin: 9px 0px 15px 15px;
+}
+div.blogentry	{
+margin: 0px 0px 25px 0px;
+padding: 0px 0px 0px 0px;
+}
+h3.user {
+font-style: italic;
+font-size:1.25em;
+color: #1f517c
+}
+article.blogcont a	{
+text-decoration: none;
+color:#1f517c;
+}
+article.blogcont a:hover {
+color:#123656;
+}
+article h1 {
+font-size:2em;
+}
+ul {
+list-style:none;
+}
+
+/*SOCIAL AND KEYWORDS*/
+
+ul.introbar	{
+margin:0px 0px 0px 0px;
+padding:0px;
+float: left;
+height:33px;
+}
+ul.introbar li	{
+float: left;
+}
+ul.introbar a	{
+text-decoration: none;
+color:#123656;
+}
+ul.introbar a:hover	{
+color:#1f517c;
+}
+#keywords	{
+margin:3px 7px 0px 10px;
+color: #1f517c;
+}
+#logkey	{
+margin:0px 3px 5px 5px;
+}
+#facebook	{
+margin:0px 10px 2px 50px;
+}
+#insta	{
+margin:0px 10px 3px 0px;
+}
+#twitter	{
+margin:2px 10px 0px 0px;
+}
+
+/*HISTORY FORMATTING */
+ul.years a, ul.months a{
+text-decoration:none;
+}
+
+ul.articles a {
+text-decoration: underline;
+}
+
+ul.years {
+text-align:left;
+margin:0px 0px 0px -40px;
+padding:0px, 0px, 0px, 0px;
+}
+ul.months {
+text-align:left;
+margin:0px 0px 0px -20px;
+padding:0px, 0px, 0px, 0px;
+}
+ul.articles {
+text-align:left;
+margin:0px 0px 0px 0px;
+padding:10px, 10px, 10px, 10px;
+}
+li.hidden {
+display: none;
+}
+li.year {
+font-size:1.5em;
+line-height:120%;
+}
+li.month {
+font-size:0.91em;
+line-height:118%;
+color: #5A5A5A;
+}
+li.article {
+font-size:0.7em;
+line-height:112%;
+}
+
+
+
+/*MOBILE FORMATTING*/
+
+@media screen and (max-width: 1100px) {
+
+nav.history	{
+width:85%;
+}
+article.blogcont	{
+width:85%;
+}
+}

@@ -1,0 +1,37 @@
+<?php
+$stmt=$conn->prepare("SELECT ID, title, slug, live FROM blog WHERE ID=?");
+$stmt ->bind_param("i", $post_id);
+$stmt ->execute();
+$array = $stmt ->get_result();
+$result = $array->fetch_assoc();
+
+
+
+echo "<h2>Update <a href=\"/blog/".$result['slug']."\" target=\"_blank\" rel=\"noreferrer noopener\">".$result['title']."</a></h2>";
+if (!empty($updated)){echo $updated;}
+echo "<h3>Current Status: ";
+if ($result['live']==0) {echo "<span style=\"color:orange;\"> 
+					<a class=\"fa fa-toggle-off btn basic\" href=\"update_blog.php?publish=".$result['ID']."\"></a> Preview</span></h3><hr>";}
+				else    {echo "<span style=\"color:green;\"> 
+					<a class=\"fa fa-toggle-on btn basic\" href=\"update_blog.php?unpublish=".$result['ID']."\"></a> Live</span></h3><hr>";}
+
+
+
+	echo "<div>
+		<h3><a class=\"fa fa-pencil btn image\" href=\"update_blog.php?edit-basic=".$result['ID']."\"></a> Update Basic Info</h3>
+	  </div>";
+
+	echo "<div>
+		<h3><a class=\"fa fa-pencil btn image\" href=\"update_blog.php?edit-content=".$result['ID']."\"></a> Update Content</h3>
+	  </div>
+	  <hr>
+	
+
+<h4><a href=\"\admin\update_blog.php\">Select another blog post</a>
+<br /><a href=\"\admin\admin.php\">Return to Profile</a></h4>
+
+<h4><a href=\"/index.php\">Go back to the homepage</a>
+<br /><a href=\"/logout\">Log out</a></h4>";
+exit();  
+
+?>
