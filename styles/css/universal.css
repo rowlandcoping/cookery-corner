@@ -43,10 +43,8 @@ src:url("/assets/fonts/Trebuchet_MS.ttf");
 
 head,body {
 font-family: Trebuchet_Internal;
-font-size: 0.95em;
+font-size: 95%;
 line-height: 115%
-}
-div.page {
 }
 h1, h2 {
 margin: 0px;
@@ -57,7 +55,7 @@ line-height: 90%;
 h3 {
 margin: 0px;
 border:0px;
-padding: 0px 0px 10px 0px;
+padding: 0 0 10px 0;
 }
 img {
 border: none; 
@@ -67,18 +65,25 @@ hr {
 clear:both;
 }
 
+ul {
+      text-decoration: none;
+      list-style: none;
+      margin:0;
+      padding:0;
+}
+
 /*BANNERS*/
 
 /*top banners*/
 div.title {
 overflow:auto;
-border-radius: 6px 6px 6px 6px;
+border-radius: 6px;
 }
 div.title_bann {
 text-align: left;
 }
 div.banner {
-margin:5px 0px 0px 0px;
+margin:5px 0 0 0;
 text-align: right;
 float:right;
 }
@@ -90,66 +95,56 @@ float:right;
 vertical-align:top;
 text-align:right;
 width:120px;
-margin:10px 0px 0px 0px;
+margin:10px 0 0 0;
 }
 
 /*MENU*/
 
-div.menubar {
-	overflow:hidden;
-	margin: 0px 0px 0px 0px;
+/*navigation*/
+#menu-main {
+      display:flex;
+      text-align:center;
+      align-items:center stretch; 
+      margin: 0;
+      padding: 6px 0;
+      padding-left:5px;
 	background-color: #008000;
-    border-radius: 6px 6px 6px 6px;
+      border-radius: 6px;
+      justify-content: space-between;
 }
-div.menubar ul {
-margin:10px;
-padding:0;
-list-style:none;
-float: left;
+#menu-bar li img{
+      margin: 2px 5px;
 }
-div.menubar ul li {
-float: left;
-margin:0px
+#menu-bar li.no-divline{
+     margin-right: 11px;
 }
-#line {
-margin-right:10px;
-margin-left:10px;
-}
-#homeimg, #aboutimg,#recipeimg, #blogimg, #reviewimg, #forumimg, #contactimg, #linksimg, #indeximg {
-	margin-right:3px;
-}
-div.loginfo {
-background-color: #008000;
-float:right;
-vertical-align:top;
-text-align:right;
-margin: 8px 0px 0px 0px;
-padding: 0px 0px 0px 0px;
-}
-div.loginfo p {
-margin:1px 0px 1px 0px;
-font-size:1.1em;
-font-weight: bold;
+#menu-bar li {
+      display: inline-block;
 }
 
-div.menulog {
-background-color: #008000;
-margin: 0px 0px 0px 0px;
-border-radius: 6px 6px 6px 6px;
-margin: 0px 0px 0px 0px;
-padding: 0px 8px 0px 0px;
-clear:both;
-overflow: hidden;
+/*login section*/
+#log-info {
+display:flex;
+flex-flow:column;
+text-align:right;
+align-items:top;
+margin-right:10px;
+padding: 0;
+min-width: 70px;
 }
-div.loginfo a {
+#log-info p {
+margin:1px 0;
+font-size:110%;
+font-weight: bold;
+}
+#log-info a {
 text-decoration: none;
 }
-div.loginfo a:hover {
+#log-info a:hover {
 color: #FF0000;
 text-decoration: none;
 }
-
-a.logname {
+.logname {
 color: #800000;
 }
 

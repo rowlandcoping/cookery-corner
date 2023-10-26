@@ -4,12 +4,13 @@ body	{
 background-image: url(/assets/backgrounds/brown.png);
 color:#999997;
 }
+
 div.homecontent, div.recommends, div.latest, div.section, div.footer	{
 background-image: url(/assets/backgrounds/wall.png);
 }
 div.section, div.homecontent, div.fltright, div.recommends, div.latest	{
 border-color:#D4AF37;
-border-radius:20px 20px 20px 20px;
+border-radius:20px;
 border-style: ridge;
 }
 div.title	{
@@ -20,14 +21,14 @@ margin-bottom:10px;
 div.main	{
 vertical-align:top;
 padding: 0px 0px 20px 0px;
-margin:0px 0px 0px 0px;
-border-radius: 6px 6px 6px 6px;
+margin:0;
+border-radius: 6px;
 }
 div.container	{
 overflow:hidden;
 margin: 0px 0px 17px 0px;
-border-radius: 20px 20px 20px 20px;
-padding: 0px 0px 0px 0px;
+border-radius: 20px;
+padding: 0;
 }
 div.main a, div.footer a	{
 text-decoration: none;
@@ -37,13 +38,13 @@ div.main a:hover, div.footer a:hover	{
 color:#123656;
 }
 h1, h2	{
-margin: 0px;
-border:0px;
+margin: 0;
+border:0;
 padding: 10px 0px 12px 0px;
 }
 h3	{
-margin: 0px;
-border:0px;
+margin: 0;
+border:0;
 padding: 0px 0px 10px 0px;
 }
 
@@ -57,7 +58,7 @@ margin: 10px 0px 0px 0px;
 width:325px;
 }
 div.sectionlist	{
-margin: 0px 0px 0px 0px;
+margin: 0;
 }
 div.section	{
 border-style: ridge;
@@ -72,8 +73,8 @@ overflow:hidden;
 }
 div.homecontent	{
 overflow:hidden;
-margin: 10px 10px 10px 10px;
-padding: 10px 10px 10px 10px;
+margin: 10px;
+padding: 10px;
 }
 div.fltright	{
 background-color: #180317;
@@ -84,8 +85,8 @@ margin: 5px 5px 5px 15px;
 padding:7;
 }
 ul.form {
-margin:0px 0px 0px 0px;
-padding:0px;
+margin:0;
+padding:0;
 list-style:none;
 height:33px;
 }
@@ -106,16 +107,16 @@ left:-2000px;
 /*RECOMMENDS SECTION*/
 
 div.recommends	{
-margin: 10px 10px 10px 10px;
-padding: 10px 10px 10px 10px;
+margin: 10px;
+padding: 10px;
 }
 
 /*LATEST SECTION*/
 
 div.latest	{
 overflow: auto;
-margin: 10px 10px 10px 10px;
-padding: 10px 10px 10px 10px;
+margin: 10px;
+padding: 10px;
 }
 ul.latest {
 margin:12px 5px 12px 5px;
@@ -141,18 +142,18 @@ margin:4px 15px 0px 0px;
 
 div.footer	{
 overflow:hidden;
-margin: 0px 0px 0px 0px;
-padding: 0px 0px 0px 0px;
+margin: 0;
+padding: 0;
 }
 div.footseg1	{
 text-align:right;
 margin: 20px 0px 0px 0px;
-padding: 0px 20px 0px 20px;
+padding: 0 20px;
 }
 div.footseg2	{
 float:left;
 margin: -5px 0px 0px 0px;
-padding: 0px 20px 0px 20px;
+padding: 0 20px;
 }
 
 /*MOBILE FORMATTING*/

@@ -124,7 +124,7 @@
 										echo "
 											<ul class=\"latest\">
 											<li id=\"logo\"><img src=\"/assets/logos/kniforkbig.jpeg\" /></li>
-											<li id=\"info\"><h3><a href=\"/recipe/".$rows['titslug']."\">".$rows['title']."</a></h3>".substr($rows['description'], 3, 60)."...</li>
+											<li id=\"info\"><h3><a href=\"/recipe/".$rows['titslug']."\">".$rows['title']."</a></h3>".substr($rows['description'], 0, 60)."...</li>
 											</ul>
 											";
 									}
@@ -138,7 +138,7 @@
 										echo "
 											<ul class=\"latest\">
 											<li id=\"logo\"><img src=\"/assets/logos/penbig.jpeg\" /></li>
-											<li id=\"info\"><h3><a href=\"/reviews/".$rows['slug']."\">".$rows['title']."</a></h3>".substr($rows['description'], 3, 60)."...</li>
+											<li id=\"info\"><h3><a href=\"/reviews/".$rows['slug']."\">".$rows['title']."</a></h3>".substr($rows['description'], 0, 60)."...</li>
 											</ul>
 											";
 									}

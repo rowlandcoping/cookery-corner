@@ -1,5 +1,7 @@
 rsync -a /home/master/repos/cookery-corner/ /var/www/html
 
+Initial Sync
+
 /home/master/rsync-continuous /home/master/repos/cookery-corner/ /var/www/html
 
-ctrl-z to stop!
+ctrl-c to stop!
