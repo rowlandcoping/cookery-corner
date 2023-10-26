@@ -20,7 +20,6 @@ require_once($doctype);
 
 body
 {
-font-size:1.05em;
 background-color: #EEEEE;
 }
 

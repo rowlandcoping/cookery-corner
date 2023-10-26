@@ -5,36 +5,41 @@ background-image: url(/assets/backgrounds/brown.png);
 color:#999997;
 }
 
-div.homecontent, div.recommends, div.latest, div.section, div.footer	{
+#intro-section, .recommends, .latest, .section, .footer	{
 background-image: url(/assets/backgrounds/wall.png);
 }
-div.section, div.homecontent, div.fltright, div.recommends, div.latest	{
+.section, #intro-section, #login-container, .recommends, div.latest	{
 border-color:#D4AF37;
 border-radius:20px;
 border-style: ridge;
 }
-div.title	{
+.title	{
 background-color:#7ffffe;
 padding: 10px;
 margin-bottom:10px;
 }
-div.main	{
+.main	{
 vertical-align:top;
 padding: 0px 0px 20px 0px;
 margin:0;
 border-radius: 6px;
 }
-div.container	{
-overflow:hidden;
+
+#home-container	{
+display:flex;
+flex-flow:row;
 margin: 0px 0px 17px 0px;
 border-radius: 20px;
 padding: 0;
 }
-div.main a, div.footer a	{
+
+
+
+.main a, .footer a	{
 text-decoration: none;
 color:#EFFD5F;
 }
-div.main a:hover, div.footer a:hover	{
+.main a:hover, .footer a:hover	{
 color:#123656;
 }
 h1, h2	{
@@ -50,107 +55,94 @@ padding: 0px 0px 10px 0px;
 
 /*SECTION OVERVIEW*/
 
-div.sectioncont	{
-float:left;
-vertical-align:top;
-text-align:center;
-margin: 10px 0px 0px 0px;
-width:325px;
+#section-container	{
+    display: flex;
+    flex-flow:column;
+    text-align:center;
+    margin: 10px 0 0 0;
+    height:100%;   
 }
-div.sectionlist	{
-margin: 0;
-}
-div.section	{
+
+.section	{
 border-style: ridge;
-margin:0px 10px 15px 15px;
+margin:0 10px 15px 15px;
 padding: 10px;
+width:275px;
 }
 
 /*TITLE AND LOGIN*/
-
-div.contentcont	{
-overflow:hidden;
+#content-container {
+    overflow:hidden;
+    flex:1;
 }
-div.homecontent	{
-overflow:hidden;
-margin: 10px;
-padding: 10px;
+#intro-section {
+    display:flex;
+    flex-flow:row;
+    justify-content:space-between;
+    overflow:hidden;
+    margin: 10px;
+    padding: 10px;
 }
-div.fltright	{
-background-color: #180317;
-float:right;
-vertical-align:top;
-text-align:center;
-margin: 5px 5px 5px 15px;
-padding:7;
+#login-container {
+    background-color: #180317;
+    float:right;
+    vertical-align:top;
+    text-align:center;
+    margin: 5px 5px 5px 15px;
+    padding:7px;
+    min-width:290px;
+    height:100%;
 }
-ul.form {
-margin:0;
-padding:0;
-list-style:none;
-height:33px;
+.form li {
+    display:block;
+    margin-bottom:10px;
 }
-ul.form li	{
-float: left;
+#email {
+    position:absolute;
+    left:-2000px;
 }
-input[name=email]	{ 
-position:absolute;
-left:-2000px;
-}
-#email	{
- margin:0px 6px 0px 18px;
-}
-#password	{
- margin:0px 5px 0px 0px;
+#realone {
+    margin-left:19px;
 }
 
 /*RECOMMENDS SECTION*/
 
-div.recommends	{
+.recommends	{
 margin: 10px;
 padding: 10px;
 }
 
 /*LATEST SECTION*/
 
-div.latest	{
+.latest	{
 overflow: auto;
 margin: 10px;
 padding: 10px;
 }
-ul.latest {
-margin:12px 5px 12px 5px;
-padding:0px;
-list-style:none;
-height:50px;
-}
-ul.latest li	{
-float: left;
-}
-ul.latest img	{
+
+.latest img	{
 border: 2px solid #ddd;
 border-radius: 4px;
 }
-#logo	{
-margin:0px 15px 0px 0px;
-}
-#info	{
-margin:4px 15px 0px 0px;
+
+.latest table {
+    margin-left:-10px;
+    border-spacing:10px;
 }
 
 /*FOOTER*/
 
-div.footer	{
+.footer	{
 overflow:hidden;
 margin: 0;
 padding: 0;
 }
-div.footseg1	{
+.footseg1	{
 text-align:right;
 margin: 20px 0px 0px 0px;
 padding: 0 20px;
 }
-div.footseg2	{
+.footseg2	{
 float:left;
 margin: -5px 0px 0px 0px;
 padding: 0 20px;

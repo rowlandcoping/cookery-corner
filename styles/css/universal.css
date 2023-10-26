@@ -75,22 +75,17 @@ ul {
 /*BANNERS*/
 
 /*top banners*/
-div.title {
-overflow:auto;
-border-radius: 6px;
-}
-div.title_bann {
-text-align: left;
-}
-div.banner {
-margin:5px 0 0 0;
-text-align: right;
-float:right;
+.title {
+      display:flex;
+      flex-flow:row;
+      justify-content:space-between;
+      align-items:center;
+      border-radius: 6px;
 }
 
 /*right banner*/
 
-div.right {
+.right {
 float:right;
 vertical-align:top;
 text-align:right;
