@@ -73,8 +73,9 @@
 											<label for="If you can read this then please leave this field blank"></label>
 											<input id="email" type="text"  name="email" size="40"/>
 										</ul>
+										<button id="login-info-page" type="submit" class="btn" name="login_btn">Login</button>
 									</form>
-									<button type="submit" class="btn" name="login_btn">Login</button>		
+									
 									<p>
 										Not registered yet? <a href="/register_user.php" target="blank">Get involved!</a>
 										<br />Forgot Password? <a href="/reset_password.php" target="blank">No Problem!</a>

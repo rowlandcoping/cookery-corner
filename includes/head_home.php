@@ -11,9 +11,11 @@
         <div id="home-banner">
             <img src="/assets/banners/cookerycornermain.png" alt="The main Cookery Corner banner, featuring Cookery Corner written in wonky red letters, and badly drawn images of a tomato, a mushroom, some bacon and an egg.">
         </div>
+        <span class="banner">--Advertisement--</span>
         <div class="title-bann">
-            <a href="http://factstofiction.co.uk"><img src="/assets/banners/facts2fiction.png"  alt="This banner contains a link for 'Facts to Fiction' featuring articles, fiction and sci-fi"></a>
+            <a href="http://factstofiction.co.uk" target="_blank"><img src="/assets/banners/facts2fiction.png" alt="This banner contains a link for 'Facts to Fiction' featuring articles, fiction and sci-fi"></a> 
         </div>
+        <span class="banner">--Advertisement--</span>
     </div>
     <?php include($menu); ?>
 

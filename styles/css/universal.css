@@ -83,6 +83,12 @@ ul {
       border-radius: 6px;
 }
 
+.banner {
+      color:rgb(80, 80, 80);
+      display:none;
+      font-size:80%;
+}
+
 /*right banner*/
 
 .right {
@@ -105,7 +111,12 @@ margin:10px 0 0 0;
       padding-left:5px;
 	background-color: #008000;
       border-radius: 6px;
-      justify-content: space-between;
+      justify-content:space-between;  
+}
+
+#menu-bar ul {
+      column-count:6;
+      column-gap:0;
 }
 #menu-bar li img{
       margin: 2px 5px;
@@ -113,16 +124,11 @@ margin:10px 0 0 0;
 #menu-bar li.no-divline{
      margin-right: 11px;
 }
-#menu-bar li {
-      display: inline-block;
-}
+
 
 /*login section*/
 #log-info {
-display:flex;
-flex-flow:column;
 text-align:right;
-align-items:top;
 margin-right:10px;
 padding: 0;
 min-width: 70px;
@@ -142,4 +148,94 @@ text-decoration: none;
 .logname {
 color: #800000;
 }
+#login-line {
+      display:none;
+      border-top:0.5px solid black;
+      border-bottom: none;
+      width:95%;
+}
 
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 1200px) {
+      .title {
+          flex-flow:column-reverse;
+      }  
+      .title-bann, #home-banner {
+          text-align:center;
+          width:50%
+      }
+      #home-banner img, .title-bann img{
+          width:100%
+      }
+      .banner {
+            display:block;
+      }      
+}
+@media screen and (max-width: 960px) {
+      .title-bann, #home-banner {
+            width:60%
+      }
+      .right {
+            display:none;
+      }
+      #menu-bar ul {
+            column-count:3;
+            column-gap: 10px;
+      }
+      #menu-bar {
+            padding-left: 70px;
+            margin-left:auto;
+            margin-right:auto;
+      }
+      #log-info {
+            max-width: 70px;
+      }
+}
+@media screen and (max-width: 768px) {
+      #menu-bar ul {
+            column-count:3;
+            column-gap: 5px;
+      }
+      .title-bann, #home-banner {
+            width:80%
+      }
+}
+
+@media screen and (max-width: 600px) {
+      .title-bann, #home-banner {
+            width:100%
+      }
+      #menu-main {
+            flex-flow:column-reverse;
+      }
+      #menu-bar {
+            padding-left: 0;
+      }
+      #menu-bar ul {
+            column-count:3;
+            column-gap: 0;
+      }
+      #log-info {
+            text-align:center;
+            align-items:top;
+            margin-right:0;
+            max-width:100%;
+      }
+      #login-line {
+            display:block;
+      }
+      
+}
+
+@media screen and (max-width: 436px) {
+      #menu-bar li img:first-child {
+            display:none;
+      }
+      .banner {
+            font-size:70%;
+      } 
+
+
+}

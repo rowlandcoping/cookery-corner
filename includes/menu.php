@@ -21,9 +21,11 @@
 				<a href="/holding.php"><img src="/assets/menu/forumimg.bmp" alt="forum"><img src="/assets/menu/forum.png" alt="forum"><img src="/assets/menu/secline.png"></a>
 			</li>
 			-->
+			<!--
 			<li>
 				<a href="/feedback/feedback190609.php"><img src="/assets/menu/contributeimg.bmp" alt="contact"><img src="/assets/menu/contact.png" alt="contact"><img src="/assets/menu/secline.png"></a>
 			</li>
+			-->
 			<!--
 			<li>
 				<a href="/holding.php"><img src="/assets/menu/friendsimg.bmp" alt="links"><img src="/assets/menu/links.png" alt="links"><img src="/assets/menu/secline.png"></a>
@@ -38,11 +40,14 @@
 		<?php
 			if (!isset($_SESSION['loggedin'])){
 				echo "<p><a href =\"/publiclogin.php\">Log In</a></p>";
-			} else{ 
-				echo "<p><a class=\"logname\" href=\"/admin/admin.php\">".$_SESSION['name']."</a></p>";
+			} else{
+				$name = $_SESSION['name'];
+				$breakpoint = ' ';
+				echo "<p><a class=\"logname\" href=\"/admin/admin.php\">".strstr($name, $breakpoint, true)."</a></p>";
 				echo "<p><a href =\"/logout\">Log Out</a></p>";
 			}
 		?>
+		<hr id="login-line">
 	</div>
 </div>
 
