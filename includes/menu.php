@@ -2,33 +2,33 @@
 	<div id="menu-bar">
 		<ul>
 			<li>
-				<a href="/index.php"><img src="/assets/menu/homeimg.bmp" alt="home"><img src="/assets/menu/home.png" alt="home"><img src="/assets/menu/secline.png"></a>
+				<a href="/index.php"><img src="/assets/menu/homeimg.bmp" alt="home"><img src="/assets/menu/home.png" alt="home"></a><img src="/assets/menu/secline.png">
 			</li>
 			<li>
-				<a href="/about.php"><img src="/assets/menu/aboutimg.bmp" alt="about"><img src="/assets/menu/about.png" alt="about"><img src="/assets/menu/secline.png"></a>
+				<a href="/about.php"><img src="/assets/menu/aboutimg.bmp" alt="about"><img src="/assets/menu/about.png" alt="about"></a><img src="/assets/menu/secline.png">
 			</li>
 			<li>
-				<a href="/recipes.php"><img src="/assets/menu/recipeimg.bmp" alt="recipes"><img src="/assets/menu/recipe.png" alt="recipes"><img src="/assets/menu/secline.png"></a>
+				<a href="/recipes.php"><img src="/assets/menu/recipeimg.bmp" alt="recipes"><img src="/assets/menu/recipe.png" alt="recipes"></a><img src="/assets/menu/secline.png">
 			</li>
 			<li>
-				<a href="/blog.php"><img src="/assets/menu/rowlandimg.bmp" alt="blog"><img src="/assets/menu/blog.png" alt="blog"><img src="/assets/menu/secline.png"></a>
+				<a href="/blog.php"><img src="/assets/menu/rowlandimg.bmp" alt="blog"><img src="/assets/menu/blog.png" alt="blog"></a><img src="/assets/menu/secline.png">
 			</li>
-			<li>
-				<a href="/reviews.php"><img src="/assets/menu/reviewsimg.bmp" alt="reviews"><img src="/assets/menu/reviews.png" alt="reviews"><img src="/assets/menu/secline.png"></a>
+			<li class = "no-divline-stacked">
+				<a href="/reviews.php"><img src="/assets/menu/reviewsimg.bmp" alt="reviews"><img src="/assets/menu/reviews.png" alt="reviews"></a><img id="stacked-line" src="/assets/menu/secline.png">
 			</li>
 			<!--
 			<li>
-				<a href="/holding.php"><img src="/assets/menu/forumimg.bmp" alt="forum"><img src="/assets/menu/forum.png" alt="forum"><img src="/assets/menu/secline.png"></a>
+				<a href="/holding.php"><img src="/assets/menu/forumimg.bmp" alt="forum"><img src="/assets/menu/forum.png" alt="forum"></a><img src="/assets/menu/secline.png">
 			</li>
 			-->
 			<!--
 			<li>
-				<a href="/feedback/feedback190609.php"><img src="/assets/menu/contributeimg.bmp" alt="contact"><img src="/assets/menu/contact.png" alt="contact"><img src="/assets/menu/secline.png"></a>
+				<a href="/feedback/feedback190609.php"><img src="/assets/menu/contributeimg.bmp" alt="contact"><img src="/assets/menu/contact.png" alt="contact"></a><img src="/assets/menu/secline.png">
 			</li>
 			-->
 			<!--
 			<li>
-				<a href="/holding.php"><img src="/assets/menu/friendsimg.bmp" alt="links"><img src="/assets/menu/links.png" alt="links"><img src="/assets/menu/secline.png"></a>
+				<a href="/holding.php"><img src="/assets/menu/friendsimg.bmp" alt="links"><img src="/assets/menu/links.png" alt="links"></a><img src="/assets/menu/secline.png">
 			</li>
 			-->
 			<li class = "no-divline">

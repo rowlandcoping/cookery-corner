@@ -1,56 +1,52 @@
 /*MAIN FORMATTING*/
 
 body	{
-background-image: url(/assets/backgrounds/brown.png);
-color:#999997;
+    background-image: url(/assets/backgrounds/brown.png);
+    color:#999997;
 }
 
 #intro-section, .recommends, .latest, .section, .footer	{
-background-image: url(/assets/backgrounds/wall.png);
+    background-image: url(/assets/backgrounds/wall.png);
 }
 .section, #intro-section, #login-container, .recommends, div.latest	{
-border-color:#D4AF37;
-border-radius:20px;
-border-style: ridge;
+    border-color:#D4AF37;
+    border-radius:20px;
+    border-style: ridge;
 }
 .title	{
-background-color:#7ffffe;
-padding: 10px;
-margin-bottom:10px;
+    background-color:#7ffffe;
+    padding: 10px;
+    margin-bottom:10px;
 }
 .main	{
-vertical-align:top;
-padding: 0px 0px 20px 0px;
-margin:0;
-border-radius: 6px;
+    vertical-align:top;
+    padding-bottom: 20px;
+    margin:0;
+    border-radius: 6px;
 }
-
 #home-container	{
-display:flex;
-flex-flow:row;
-margin: 0px 0px 17px 0px;
-border-radius: 20px;
-padding: 0;
+    display:flex;
+    flex-flow:row;
+    margin-bottom: 17px;
+    border-radius: 20px;
+    padding: 0;
 }
-
-
-
 .main a, .footer a	{
-text-decoration: none;
-color:#EFFD5F;
+    text-decoration: none;
+    color:#EFFD5F;
 }
 .main a:hover, .footer a:hover	{
-color:#123656;
+    color:#123656;
 }
 h1, h2	{
-margin: 0;
-border:0;
-padding: 10px 0px 12px 0px;
+    margin: 0;
+    border:0;
+    padding: 10px 0 12px 0;
 }
 h3	{
-margin: 0;
-border:0;
-padding: 0px 0px 10px 0px;
+    margin: 0;
+    border:0;
+    padding-bottom: 10px;
 }
 
 /*SECTION OVERVIEW*/
@@ -186,8 +182,8 @@ padding: 0 20px;
 
 @media screen and (max-width: 436px) {
     #login-container {
-        max-width:250px;
-        min-width:250px;
+        max-width:240px;
+        min-width:240px;
     }
     .form label {
         line-height: 200%;

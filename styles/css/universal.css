@@ -5,12 +5,10 @@
       font-family: pencilpete; /* CAN BE ANYTHING YOU WANT */
       src: url("/assets/fonts/Pencilpetefont-844B.otf");
 }
-
 @font-face {
       font-family: sara;
       src: url("/assets/fonts/SaraScribbles.ttf");
 } 
- 
 @font-face {
       font-family: chalk;
       src: url("/assets/fonts/Chalk Board.ttf");
@@ -18,53 +16,50 @@
 @font-face {
       font-family: tuck;
       src: url("/assets/fonts/TuckShop-Regular.otf");
-}
-      
+}    
 @font-face {
-font-family: 'Trebuchet_Internal';
-src: url("/assets/fonts/Trebuchet_MS_Bold_Italic.ttf");
-font-style: italic;
-font-style: bold;
-}
-@font-face {
-font-family: 'Trebuchet_Internal';
-src: url("/assets/fonts/Trebuchet_MS_Bold.ttf");
-font-style: bold;
+      font-family: 'Trebuchet_Internal';
+      src: url("/assets/fonts/Trebuchet_MS_Bold_Italic.ttf");
+      font-style: italic;
+      font-style: bold;
 }
 @font-face {
-font-family: 'Trebuchet_Internal';
-src:url("/assets/fonts/Trebuchet_MS_Italic.ttf");
-font-style: italic;
+      font-family: 'Trebuchet_Internal';
+      src: url("/assets/fonts/Trebuchet_MS_Bold.ttf");
+      font-style: bold;
 }
 @font-face {
-font-family: 'Trebuchet_Internal';
-src:url("/assets/fonts/Trebuchet_MS.ttf");
+      font-family: 'Trebuchet_Internal';
+      src:url("/assets/fonts/Trebuchet_MS_Italic.ttf");
+      font-style: italic;
 }
-
+@font-face {
+      font-family: 'Trebuchet_Internal';
+      src:url("/assets/fonts/Trebuchet_MS.ttf");
+}
 head,body {
-font-family: Trebuchet_Internal;
-font-size: 95%;
-line-height: 115%
+      font-family: Trebuchet_Internal;
+      font-size: 95%;
+      line-height: 115%
 }
 h1, h2 {
-margin: 0px;
-border:0px;
-padding: 5px 0px 10px 0px;
-line-height: 90%;
+      margin: 0px;
+      border:0px;
+      padding: 5px 0px 10px 0px;
+      line-height: 90%;
 }
 h3 {
-margin: 0px;
-border:0px;
-padding: 0 0 10px 0;
+      margin: 0px;
+      border:0px;
+      padding: 0 0 10px 0;
 }
 img {
-border: none; 
-vertical-align: middle;
+      border: none; 
+      vertical-align: middle;
 }
 hr {
-clear:both;
+      clear:both;
 }
-
 ul {
       text-decoration: none;
       list-style: none;
@@ -82,7 +77,6 @@ ul {
       align-items:center;
       border-radius: 6px;
 }
-
 .banner {
       color:rgb(80, 80, 80);
       display:none;
@@ -90,7 +84,6 @@ ul {
 }
 
 /*right banner*/
-
 .right {
 float:right;
 vertical-align:top;
@@ -113,7 +106,6 @@ margin:10px 0 0 0;
       border-radius: 6px;
       justify-content:space-between;  
 }
-
 #menu-bar ul {
       column-count:6;
       column-gap:0;
@@ -121,32 +113,38 @@ margin:10px 0 0 0;
 #menu-bar li img{
       margin: 2px 5px;
 }
-#menu-bar li.no-divline{
+.no-divline{
      margin-right: 11px;
 }
-
-
+#menu-bar li a {
+      display:inline-block;
+      height:100%;
+}
+#menu-bar li a:hover {
+      filter:brightness(150%);
+      backdrop-filter:brightness(101%);
+}
 /*login section*/
 #log-info {
-text-align:right;
-margin-right:10px;
-padding: 0;
-min-width: 70px;
+      text-align:right;
+      margin-right:10px;
+      padding: 0;
+      min-width: 70px;
 }
 #log-info p {
-margin:1px 0;
-font-size:110%;
-font-weight: bold;
+      margin:1px 0;
+      font-size:110%;
+      font-weight: bold;
 }
 #log-info a {
-text-decoration: none;
+      text-decoration: none;
 }
 #log-info a:hover {
-color: #FF0000;
-text-decoration: none;
+      color: #FF0000;
+      text-decoration: none;
 }
 .logname {
-color: #800000;
+      color: #800000;
 }
 #login-line {
       display:none;
@@ -158,15 +156,15 @@ color: #800000;
 
 /*MEDIA QUERIES*/
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1228px) {
       .title {
           flex-flow:column-reverse;
       }  
-      .title-bann, #home-banner {
+      .title-bann, .section-banner {
           text-align:center;
           width:50%
       }
-      #home-banner img, .title-bann img{
+      .section-banner img, .title-bann img{
           width:100%
       }
       .banner {
@@ -174,15 +172,17 @@ color: #800000;
       }      
 }
 @media screen and (max-width: 960px) {
-      .title-bann, #home-banner {
+      .title-bann, .section-banner {
             width:60%
       }
       .right {
             display:none;
       }
+      #menu-main {
+            padding-left:0;
+      }
       #menu-bar ul {
             column-count:3;
-            column-gap: 10px;
       }
       #menu-bar {
             padding-left: 70px;
@@ -192,26 +192,31 @@ color: #800000;
       #log-info {
             max-width: 70px;
       }
+      #stacked-line {
+            display:none;
+      }
+      .no-divline-stacked{
+            margin-right: 11px;
+      }
 }
 @media screen and (max-width: 768px) {
       #menu-bar ul {
             column-count:3;
             column-gap: 5px;
       }
-      .title-bann, #home-banner {
+      .title-bann, .section-banner {
             width:80%
       }
 }
-
 @media screen and (max-width: 600px) {
-      .title-bann, #home-banner {
-            width:100%
+      .title-bann, .section-banner {
+            width:100%;
       }
       #menu-main {
             flex-flow:column-reverse;
       }
       #menu-bar {
-            padding-left: 0;
+            padding-left: 11px;
       }
       #menu-bar ul {
             column-count:3;
@@ -228,14 +233,11 @@ color: #800000;
       }
       
 }
-
-@media screen and (max-width: 436px) {
+@media screen and (max-width: 440px) {
       #menu-bar li img:first-child {
             display:none;
       }
       .banner {
             font-size:70%;
-      } 
-
-
+      }
 }

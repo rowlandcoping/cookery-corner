@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="title">
-        <div id="home-banner">
+        <div class="section-banner">
             <img src="/assets/banners/cookerycornermain.png" alt="The main Cookery Corner banner, featuring Cookery Corner written in wonky red letters, and badly drawn images of a tomato, a mushroom, some bacon and an egg.">
         </div>
         <span class="banner">--Advertisement--</span>
