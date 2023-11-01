@@ -1,76 +1,89 @@
 /*MAIN LAYOUT*/
 
-div.title	{
-background-image: url(/assets/backgrounds/blogstripe.bmp);
-padding: 0px;
-margin-bottom:10px;
-border-radius: 6px 6px 6px 6px;
+.title	{
+    background-image: url(/assets/backgrounds/blogstripe.bmp);
+    padding: 0;
+    padding-right:10px;
+    margin-bottom:10px;
+    border-radius: 6px;
 }
-div.banner {
-margin:15px 10px 0px 0px;
+.right	{
+    margin:0px 0px 0px 0px;
 }
-div.right	{
-margin:0px 0px 0px 0px;
-}
-div.main	{
+.main	{
 padding: 0px 30px 20px 30px;
 margin:10px 0px 0px 0px;
 border-radius: 6px 6px 6px 6px;
 }
-div.container	{
-overflow:hidden;
-margin: 0px 0px 17px 0px;
-border-radius: 20px 20px 20px 20px;
-padding: 14px 14px 14px 14px;
+#liveblog-container	{
+display:flex;
+margin-bottom: 17px;
+border-radius: 20px;
+padding: 14px;
 }
-div.blogcont	{
-overflow:hidden;
-padding:15px 25px 15px 25px;
-margin:20px 375px 20px 45px;
+#content-container {
+    display:flex;
+    flex-flow:column;
+    height:100%;
+    flex:1;
+    margin:0;
+    padding:0;
 }
-div.blogentry	{
-margin: 0px 0px 25px 0px;
+.blogcont {
+    flex:1;
+    overflow:hidden;
+    padding:15px 25px;
+    margin:20px 45px;
+}
+.blogentry {
+margin: 0px 0px 0px 0px;
 padding: 0px 0px 0px 0px;
 }
-div.blogcont a	{
+.blogcont a	{
 text-decoration: none;
 color:#1f517c;
 }
-div.blogcont a:hover	{
+.blogcont a:hover	{
 color:#123656;
 }
 
 /*HISTORY SECTION*/
 
-div.history	{
-float:right;
-vertical-align:top;
-margin: 17px 45px 20px 0px;
-width:275px;
+#history {
+    display:flex;
+    justify-content:center;
+    height:100%;
+    margin: 20px 45px 20px 0;
 }
-div.historytext	{
-margin: 17px;
-padding: 0px 0px 0px 0px;
+#history-text {
+    min-width:275px;
+    max-width:275px;
+    margin: 17px;
+    padding: 0;
 }
-div.history a	{
-color:#1f517c;
+#history-text h2 {
+    text-align:center;
 }
-div.history a:hover	{
-color:#123656;
+#history a	{
+    color:#1f517c;
+}
+#history a:hover	{
+    color:#123656;
 }
 
 /*LIVEBLOG INTRO*/
 
-div.blogimgright	{
-float:right;
-vertical-align:top;
-text-align:center;
-margin: 9px 0px 15px 15px;
+.blogimgright	{
+    float:right;
+    vertical-align:top;
+    text-align:center;
+    margin: 9px 0 15px 15px;
 }
 h3.user {
-font-style: italic;
-font-size:1.25em;
-color: #1f517c
+    font-style: italic;
+    font-size:125%;
+    line-height:120%;
+    color: #1f517c;
 }
 ul.contact {
 margin:0px 0px 20px 0px;
@@ -87,57 +100,37 @@ margin:10px 0px 0px 15px;
 }
 
 /*SOCIAL AND KEYWORDS*/
-ul {
-list-style:none;
+#bottom-article {
+    display:flex;
+    flex-flow:row;
+    justify-content: space-between;
+    color:#123656;
 }
-
-ul.introbar	{
-margin:0px 0px 0px 0px;
-padding:0px;
-
-float: left;
-height:33px;
+#blog-keywords img {
+    margin-right:10px;
 }
-ul.introbar li	{
-float: left;
+#blog-social img {
+    margin-left:10px;
 }
-ul.introbar a	{
-text-decoration: none;
-color:#123656;
+#bottom-article a {
+    text-decoration: none;
 }
-ul.introbar a:hover	{
-color:#1f517c;
-}
-#keywords	{
-margin:3px 7px 0px 10px;
-color: #1f517c;
-}
-#logkey	{
-margin:0px 3px 5px 5px;
-}
-#facebook	{
-margin:0px 10px 2px 50px;
-}
-#insta	{
-margin:0px 10px 3px 0px;
-}
-#twitter	{
-margin:2px 10px 0px 0px;
+#blog-divider {
+    display:none;
+    width: 50%;
 }
 
 /*LIVEBLOG ENTRIES*/
 
-div.segment	{
+.segment	{
+width:100%;
 overflow:hidden;
 min-height: 130px;
 padding: 0px 0px 0px 0px;
 margin: 0px 0px 0px 0px;
 }
-div.segmentimage	{
-vertical-align:top;
-float:right;
-text-align:left;
-margin: 10px 0px 10px 15px;
+.segment .blogimgright	{
+    margin-top:-33px;
 }
 div.linethin	{
 width:100%;
@@ -157,53 +150,142 @@ font-weight:bold;
 /*HISTORY FORMATTING */
 
 ul.years a, ul.months a{
-text-decoration:none;
+    text-decoration:none;
 }
-
 ul.articles a {
-text-decoration: underline;
+    text-decoration: underline;
 }
-
 ul.years {
-text-align:left;
-margin:0px 0px 0px -40px;
-padding:0px, 0px, 0px, 0px;
+    text-align:left;
 }
 ul.months {
-text-align:left;
-margin:0px 0px 0px -20px;
-padding:0px, 0px, 0px, 0px;
+    text-align:left;
+    margin-left:20px;
 }
 ul.articles {
-text-align:left;
-margin:0px 0px 0px 0px;
-padding:10px, 10px, 10px, 10px;
+    text-align:left;
+    margin-left: 40px;
 }
 li.hidden {
-display: none;
+    display: none;
 }
 li.year {
-font-size:1.5em;
-line-height:120%;
+    font-size:150%;
+    line-height:120%;
 }
 li.month {
-font-size:0.91em;
-line-height:118%;
-color: #5A5A5A;
+    font-size:91%;
+    line-height:118%;
 }
 li.article {
-font-size:0.7em;
-line-height:112%;
+    font-size:70%;
+    line-height:112%;
 }
 
 /*MOBILE FORMATTING*/
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1200px) {
+#liveblog-container {
+    flex-flow:column-reverse;
+    flex-wrap:wrap;
+}
+.blogcont, #history {
+    margin:20px 63px;
+}
+#history {
+    padding: 0 150px;
+}
+}
+@media screen and (max-width: 1228px) {
+.section-banner{
+    margin:10px 0;
+}
+}
 
-div.history	{
-width:85%;
+@media screen and (max-width: 960px) {
+#liveblog-container {
+    margin:10px 10px;
 }
-div.blogcont	{
-width:85%;
 }
+@media screen and (max-width: 891px) {
+.blogcont {
+    display:flex;
+    align-items:center;
+    flex-flow:column-reverse;
+}
+.blogimgright {
+    display:block;
+    width:100%;
+    margin: 10px 0;
+}
+.blogimgright img {
+    width:75%;
+}
+#history {
+    padding: 0 75px;
+}
+#bottom-article {
+    flex-flow:column;
+    align-items:center;
+}
+#blog-divider {
+    display:block;
+}
+.segment {
+    text-align:center;
+}
+.segment .blogimgright	{
+    margin:0 0 15px 0;
+}
+}
+@media screen and (max-width: 705px) {
+.blogimgright img {
+    width:100%;
+}
+#history {
+    padding: 0 25px;
+}
+#blog-keywords img {
+    display:none;
+} 
+}
+@media screen and (max-width: 600px) {
+.title {
+    padding: 0 10px;
+}
+.main	{
+    padding: 0;
+}
+.blogcont, #history {
+    margin:20px;
+}
+#liveblog-container {
+    margin:10px 0;
+}
+}
+@media screen and (max-width: 436px) {
+#history {
+    padding: 0;
+}
+.blogcont, #history {
+    margin:10px;
+}
+#history-text {
+    margin:10px;
+}
+}
+@media screen and (max-width: 359px) {
+.blogcont, #history {
+    margin:10px 0;
+}
+#history-text {
+    min-width:250px;
+}
+}
+
+@media screen and (max-width: 330px) {
+#contact img {
+    width:50px;
+}
+
 }

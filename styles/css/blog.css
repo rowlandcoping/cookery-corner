@@ -1,11 +1,10 @@
 /*MAIN LAYOUT*/
-
-body	{	
-background-image: url(/assets/backgrounds/desk.jpeg);
-color:#3f3f3f;
+body {	
+    background-image: url(/assets/backgrounds/desk.jpeg);
+    color:#3f3f3f;
 }
 #blog-content, #history	{
-background-image: url(/assets/backgrounds/linedpaper.jpeg);
+    background-image: url(/assets/backgrounds/linedpaper.jpeg);
 }
 #blog-container	{
     display:flex;
@@ -14,24 +13,23 @@ background-image: url(/assets/backgrounds/linedpaper.jpeg);
     border-radius: 20px;
     padding: 14px;
 }
-.title	{
+.title {
     background-image: url(/assets/backgrounds/blogstripe.bmp);
     padding: 0;
     padding-right:10px;
     margin-bottom:10px;
     border-radius: 6px;
 }
-.right	{
-margin:0;
+.right {
+    margin:0;
 }
-.main	{
-padding: 0 30px 20px 30px;
-margin-top:10px;
-border-radius: 6px;
+.main {
+    padding: 0 30px 20px 30px;
+    margin-top:10px;
+    border-radius: 6px;
 }
 
 /*HISTORY SECTION*/
-
 #history {
     display:flex;
     justify-content:center;
@@ -56,46 +54,42 @@ border-radius: 6px;
 
 /*BLOG CONTENT*/
 
-#blog-content	{
+#blog-content {
     height:100%;
     flex:1;
     overflow:hidden;
     padding:15px 25px;
     margin:20px 45px;
 }
-.blogimgright	{
+.blogimgright {
     float:right;
     vertical-align:top;
     text-align:center;
     margin: 9px 0 15px 15px;
 }
-.blogentry	{
+.blogentry {
     margin-bottom:25px;
     padding: 0;
 }
 h3.user {
-font-style: italic;
-font-size:125%;
-line-height:120%;
-color: #1f517c
+    font-style: italic;
+    font-size:125%;
+    line-height:120%;
+    color: #1f517c;
 }
 #blog-content a	{
-text-decoration: none;
-color:#1f517c;
+    text-decoration: none;
+    color:#1f517c;
 }
 #blog-content a:hover {
-color:#123656;
+    color:#123656;
 }
 #blog-content h1 {
-font-size:200%;
-line-height:100%;
-}
-ul {
-list-style:none;
+    font-size:200%;
+    line-height:100%;
 }
 
 /*SOCIAL AND KEYWORDS*/
-
 #bottom-article {
     display:flex;
     flex-flow:row;
@@ -116,45 +110,40 @@ list-style:none;
     width: 50%;
 }
 
-
 /*HISTORY FORMATTING */
 ul.years a, ul.months a{
-text-decoration:none;
+    text-decoration:none;
 }
-
 ul.articles a {
-text-decoration: underline;
+    text-decoration: underline;
 }
-
 ul.years {
-text-align:left;
+    text-align:left;
 }
 ul.months {
-text-align:left;
-margin-left:20px;
+    text-align:left;
+    margin-left:20px;
 }
 ul.articles {
-text-align:left;
-margin-left: 40px;
+    text-align:left;
+    margin-left: 40px;
 }
 li.hidden {
-display: none;
+    display: none;
 }
 li.year {
-font-size:150%;
-line-height:120%;
+    font-size:150%;
+    line-height:120%;
 }
 li.month {
-font-size:91%;
-line-height:118%;
-color: #5A5A5A;
+    font-size:91%;
+    line-height:118%;
+    color: #5A5A5A;
 }
 li.article {
-font-size:70%;
-line-height:112%;
+    font-size:70%;
+    line-height:112%;
 }
-
-
 
 /*MOBILE FORMATTING*/
 
@@ -170,7 +159,6 @@ line-height:112%;
         padding: 0 150px;
     }
 }
-
 @media screen and (max-width: 1228px) {
     .section-banner{
         margin:10px 0;
@@ -182,7 +170,6 @@ line-height:112%;
         margin:10px 10px;
     }
 }
-
 @media screen and (max-width: 891px) {
     #blog-content {
         display:flex;
@@ -200,10 +187,14 @@ line-height:112%;
     #history {
         padding: 0 75px;
     }
-    
-    
+    #bottom-article {
+        flex-flow:column;
+        align-items:center;
+    }
+    #blog-divider {
+        display:block;
+    }     
 }
-
 @media screen and (max-width: 705px) {
     .blogimgright img {
         width:100%;
@@ -211,16 +202,10 @@ line-height:112%;
     #history {
         padding: 0 25px;
     }
-    #bottom-article {
-        flex-flow:column;
-        align-items:center;
-    }
-    #blog-divider {
-        display:block;
-    }
-    
+    #blog-keywords img {
+        display:none;
+    } 
 }
-
 @media screen and (max-width: 600px) {
     .title {
         padding: 0 10px;
@@ -234,11 +219,6 @@ line-height:112%;
     #blog-container {
         margin:10px 0;
     }
-    .introbar ul	{
-        column-count:3;
-        column-gap:0;
-        height:33px;
-    }
 }
 @media screen and (max-width: 436px) {
     #history {
@@ -250,11 +230,7 @@ line-height:112%;
     #history-text {
         margin:10px;
     }
-    #blog-keywords img {
-        display:none;
-    }
 }
-
 @media screen and (max-width: 359px) {
     #blog-content, #history {
         margin:10px 0;

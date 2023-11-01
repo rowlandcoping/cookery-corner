@@ -2,7 +2,6 @@
 	$path = $_SERVER['DOCUMENT_ROOT'];
 	$config = "$path"."/config.php";
 	$analytics = "$path"."/analytics.php";
-	$doctype="$path"."/includes/doctype.php";
 	$banner = "$path"."/includes/right_banner.php";
 	$head = "$path"."/includes/head_blog.php";
 	$functions = "$path"."/includes/blog_functions.php";
@@ -36,7 +35,7 @@
 		$query2 ->execute();				
 		$blogres = $query2 ->get_result();
 		$post = $blogres->fetch_assoc();	
-	} else{ 
+	} else { 
 		/*if coming via main menu get most recent*/
 		$query = $conn->prepare("SELECT blog_ID, day_full, day, suffix, month, month_short, month_full, year from article_index WHERE article_type=? 
 									ORDER by year DESC, MONTH DESC, day DESC, time_24h DESC LIMIT 1");
@@ -81,7 +80,7 @@
 							<header>
 								<h1>
 									<?php
-									echo $post ['title'];
+										echo $post ['title'];
 									?>
 								</h1>
 								<h3 class="user">
@@ -125,7 +124,7 @@
 								<div id="blog-keywords">
 									<img src="/assets/logos/keylog.png">
 									<?php
-											echo $post['keywords'];
+										echo $post['keywords'];
 									?>
 								</div>
 								<hr id="blog-divider">
@@ -141,8 +140,6 @@
 					<div id="history">
 						<div id="history-text">
 							<h2><a href="/liveblog.php"><b>Visit Live Blog</b></a></h2>
-							<hr>
-							<h2>Search Blog Archive</h2>
 							<hr>
 							<?php							
 								if (isset($_GET['collapse'])) {
