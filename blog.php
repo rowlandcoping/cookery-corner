@@ -69,13 +69,13 @@
 							$dateres = $timedate ->get_result();
 							$dmr = $dateres->fetch_assoc();
 						?>
-						<figure class ="blogimgright">
+						<div class ="blogimgright">
 							<?php
 								if (!empty($post['blog_image'])){
 									echo "<img src=\"/assets/images/blog/".$post['blog_image']."\" width=\"350\">"; 
 								}
 							?>
-						</figure>
+						</div>
 						<div class="blogentry">
 							<header>
 								<h1>
@@ -137,7 +137,7 @@
 							<hr>
 						</div>						
 					</article>
-					<div id="history">
+					<section id="history">
 						<div id="history-text">
 							<h2><a href="/liveblog.php"><b>Visit Live Blog</b></a></h2>
 							<hr>
@@ -224,7 +224,7 @@
 							?>
 							<hr>
 						</div>
-					</div>
+					</section>
 				</div>
 			</div>
 		</div>

@@ -30,7 +30,7 @@
 			echo "background-color: ".$post['blog_color'].";";
 		}
 		echo "}
-			div.blogcont, #history {";
+			.blogcont, #history {";
 		if (!empty ($post['textarea_background'])) {
 			echo "background-image: url(/assets/backgrounds/liveblog/".$post['textarea_background'].");";
 		} else {
@@ -40,13 +40,13 @@
 			echo "background-size: cover;";
 		}
 		echo "}
-			li.year {
+			.year {
 				color:".$post['h_color'].";
 			}
-			li.month {
+			.month {
 				color:".$post['text_color'].";
 			}
-			h2, h3, h3.user	{
+			h2, h3, .user	{
 				color: ".$post['h_color'].";
 			}
 			#liveblog-container a	{

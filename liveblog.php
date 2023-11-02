@@ -61,18 +61,18 @@
 			<?php require_once($banner); ?>
 			<div class="main">	
 				<div id="liveblog-container">					
-					<div id="content-container">
+					<main id="content-container">
 						<!--container to ensure switch in flex direction affects correct elements -->
-						<div class="blogcont">
-							<!--Intro section for live blog (same layout as blog) -->
+						<section class="blogcont">
+							<!--Intro section for live blog (same layout as blog) -->	
 							<div class ="blogimgright">
 								<?php
 									if (!empty($post['main_image'])) {
 										echo "<img src=\"/assets/images/liveblog/".$post['main_image']."\" width=\"350\">"; 
 									}
 								?>
-							</div>
-							<div class="blogentry">							
+							</div>						
+							<div class="blogentry">															
 								<h1>
 									<?php
 										echo $post ['title'];
@@ -137,8 +137,8 @@
 								</div>
 								<hr>
 							</div>
-						</div>
-						<div class="blogcont">
+						</section>
+						<section class="blogcont">
 							<!--Section for each liveblog post -->
 							<div class="blogentry">
 								<?php
@@ -169,9 +169,9 @@
 									}
 								?>
 							</div>
-						</div>
-					</div>
-					<div id="history">
+						</section>
+					</main>
+					<section id="history">
 						<div id="history-text">
 							<h2 style="text-align:center;"><b><a href="/blog.php">Visit Blog</a></b></h2>
 							<hr>
@@ -258,7 +258,7 @@
 							?>
 							<hr>
 						</div>
-					</div>
+					</section>
 				</div>
 			</div>
 		</div>

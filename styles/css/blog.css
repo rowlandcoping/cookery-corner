@@ -63,7 +63,6 @@ body {
 }
 .blogimgright {
     float:right;
-    vertical-align:top;
     text-align:center;
     margin: 9px 0 15px 15px;
 }
@@ -111,42 +110,41 @@ h3.user {
 }
 
 /*HISTORY FORMATTING */
-ul.years a, ul.months a{
+.years a, .months a{
     text-decoration:none;
 }
-ul.articles a {
+.articles a {
     text-decoration: underline;
 }
-ul.years {
+.years {
     text-align:left;
 }
-ul.months {
+.months {
     text-align:left;
     margin-left:20px;
 }
-ul.articles {
+.articles {
     text-align:left;
     margin-left: 40px;
 }
-li.hidden {
+.hidden {
     display: none;
 }
-li.year {
+.year {
     font-size:150%;
     line-height:120%;
 }
-li.month {
+.month {
     font-size:91%;
     line-height:118%;
     color: #5A5A5A;
 }
-li.article {
+.article {
     font-size:70%;
     line-height:112%;
 }
 
 /*MOBILE FORMATTING*/
-
 @media screen and (max-width: 1200px) {
     #blog-container {
         flex-flow:column-reverse;
