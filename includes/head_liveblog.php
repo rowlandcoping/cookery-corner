@@ -13,53 +13,56 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 	<link rel="stylesheet" type="text/css" href="/styles/css/universal.css" />
 	<link rel="stylesheet" type="text/css" href="/styles/css/liveblog.css" />
-	<?php
-		echo"<style type=\"text/css\">
-			body {";
-		if (!empty ($post['body_background'])) {
-			echo "background-image: url(/assets/backgrounds/liveblog/".$post['body_background'].")";
-		} else {
-			echo "background-color: ".$post['body_color'];
-		}
-		echo ";color:".$post['text_color'].";
+	<style type="text/css">
+		<?php
+			echo "
+				body {"
+			;
+			if (!empty ($post['body_background'])) {
+				echo "background-image: url(/assets/backgrounds/liveblog/".$post['body_background'].")";
+			} else {
+				echo "background-color: ".$post['body_color'];
 			}
-			#liveblog-container {";
-		if (!empty ($post['blog_background'])) {
-			echo "background-image: url(/assets/backgrounds/liveblog/".$post['blog_background'].");";
-		} else {
-			echo "background-color: ".$post['blog_color'].";";
-		}
-		echo "}
-			.blogcont, #history {";
-		if (!empty ($post['textarea_background'])) {
-			echo "background-image: url(/assets/backgrounds/liveblog/".$post['textarea_background'].");";
-		} else {
-			echo "background-color: ".$post['textarea_color'];
-		}
-		if ($post['bgtype']=="cover"){
-			echo "background-size: cover;";
-		}
-		echo "}
-			.year {
-				color:".$post['h_color'].";
+			echo ";color:".$post['text_color'].";
+				}
+				#liveblog-container {";
+			if (!empty ($post['blog_background'])) {
+				echo "background-image: url(/assets/backgrounds/liveblog/".$post['blog_background'].");";
+			} else {
+				echo "background-color: ".$post['blog_color'].";";
 			}
-			.month {
-				color:".$post['text_color'].";
+			echo "}
+				.blogcont, #history {";
+			if (!empty ($post['textarea_background'])) {
+				echo "background-image: url(/assets/backgrounds/liveblog/".$post['textarea_background'].");";
+			} else {
+				echo "background-color: ".$post['textarea_color'];
 			}
-			h2, h3, .user	{
-				color: ".$post['h_color'].";
+			if ($post['bgtype']=="cover"){
+				echo "background-size: cover;";
 			}
-			#liveblog-container a	{
-				color:".$post['links_color'].";
-			}
-			#liveblog-container a:hover {
-				color:".$post['hover_color'].";
-			}
-			#keywords {
-				color:".$post['h_color'].";
-			}
-			</style>";
-	?>
+			echo "}
+				.year {
+					color:".$post['h_color'].";
+				}
+				.month {
+					color:".$post['text_color'].";
+				}
+				h2, h3, .user	{
+					color: ".$post['h_color'].";
+				}
+				#liveblog-container a	{
+					color:".$post['links_color'].";
+				}
+				#liveblog-container a:hover {
+					color:".$post['hover_color'].";
+				}
+				#keywords {
+					color:".$post['h_color'].";
+				}"
+			;
+		?>
+	</style>
 </head>
 <body>
 	<header>

@@ -158,6 +158,9 @@ padding: 0 20px;
     #section-container {
         display:none;
     }
+    .right {
+        display:none;
+    }
 }
 
 @media screen and (max-width: 768px) {

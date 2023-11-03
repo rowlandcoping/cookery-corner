@@ -18,7 +18,7 @@ body {
     padding: 0;
     padding-right:10px;
     margin-bottom:10px;
-    border-radius: 6px;
+    border-radius: 6px; 
 }
 .right {
     margin:0;
@@ -166,6 +166,9 @@ h3.user {
 @media screen and (max-width: 960px) {
     #blog-container {
         margin:10px 10px;
+    }
+    .right {
+        display:none;
     }
 }
 @media screen and (max-width: 891px) {

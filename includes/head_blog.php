@@ -15,7 +15,6 @@
 	<link rel="stylesheet" type="text/css" href="/styles/css/universal.css">
 	<link rel="stylesheet" type="text/css" href="/styles/css/blog.css">
 </head>
-
 <body>
 	<header>
 		<div class="title">

@@ -82,6 +82,9 @@ ul {
       display:none;
       font-size:80%;
 }
+.section-banner img {
+      max-width:460px;
+}
 
 /*right banner*/
 .right {
@@ -164,8 +167,9 @@ margin:10px 0 0 0;
           text-align:center;
           width:50%
       }
-      .section-banner img, .title-bann img{
-          width:100%
+      .section-banner img, .title-bann img {
+          width:100%;
+          max-width:none;
       }
       .banner {
             display:block;
@@ -174,9 +178,6 @@ margin:10px 0 0 0;
 @media screen and (max-width: 960px) {
       .title-bann, .section-banner {
             width:60%
-      }
-      .right {
-            display:none;
       }
       #menu-main {
             padding-left:0;

@@ -190,6 +190,9 @@ font-weight:bold;
     #liveblog-container {
         margin:10px 10px;
     }
+    .right {
+        display:none;
+    }
 }
 @media screen and (max-width: 891px) {
     .blogcont {
