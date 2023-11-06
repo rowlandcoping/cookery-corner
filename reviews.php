@@ -5,7 +5,6 @@
 	$banner = "$path"."/includes/right_banner.php";
 	$analytics = "$path"."/analytics.php"; 
 	require_once($config);
-	require_once($head); 
 ?>
 
 <!DOCTYPE html>
@@ -24,10 +23,11 @@
 						</div>
 						<div class="review">
 							<h1>Random Reviews</h1>
-							<a href=""><img src="/assets/logos/fbook.jpg"></a></li>
-							<a href=""><img src="/assets/logos/twitter.jpg"></a></li>
-							<a href=""><img src="/assets/logos/insta.png"></a></li>
-							</ul>
+							<div id="reviews-social">
+								<a href=""><img src="/assets/logos/fbook.jpg"></a>
+								<a href=""><img src="/assets/logos/twitter.jpg"></a>
+								<a href=""><img src="/assets/logos/insta.png"></a>
+							</div>
 							<p>
 								Welcome to the fantastical home of Random Reviews, the beating heart of this website for the last 20 years.
 							</p>

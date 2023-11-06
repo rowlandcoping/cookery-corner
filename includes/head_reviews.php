@@ -33,7 +33,7 @@
 				echo ";
 						color:".$post['border_text'].";>
 					}
-					div.reviewbox {"
+					.reviewbox-left, .reviewbox-right, .reviewbox {"
 				;
 				if (!empty ($post['text_background'])) {
 					echo "background-image: url(/assets/backgrounds/reviews/".$post['text_background'].")";
@@ -43,7 +43,7 @@
 				echo ";
 						border-color:".$post['border_text'].";
 					}
-					div.title {"
+					.title {"
 				;
 				if ($post['title'] =="Useless Present Review" || $post['title']=="Present Review Feedback"){
 					echo "background-image: url(/assets/backgrounds/snow.bmp)";
@@ -53,11 +53,11 @@
 					h2, h3 {
 						color: ".$post['h2h3_color'].";
 					}
-					div.reviewbox a	{
+					.reviewbox-left a, .reviewbox-right a, .reviewbox a {
 						text-decoration: none;
 						color:".$post['h2h3_color'].";
 					}
-					div.reviewbox a:hover {
+					.reviewbox-left a:hover, .reviewbox-right a:hover, .reviewbox a:hover {
 						text-decoration: none;
 						color:".$post['border_text'].";
 					}"
