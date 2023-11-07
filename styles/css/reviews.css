@@ -50,7 +50,6 @@
 }
 
 /*REVIEW HOME LISTINGS*/
-
 #reviews-box-container {
     margin-left:50px;
 }
@@ -100,9 +99,12 @@
 /*REVIEW POSTS*/
 .flex-container-reviews {
     display:flex;
+    justify-content:center;
 } 
+.reviewbox-left, .reviewbox-right {
+    width:50%;
+}
 .reviewbox-left, .reviewbox-right, .reviewbox {
-    flex:1;
     overflow:hidden;
     border-style: ridge;
     border-radius: 20px;    
@@ -111,6 +113,7 @@
     margin-bottom: 40px;
 }
 .reviewbox {
+    flex:1;
     margin: 10px 50px 40px 50px;
 }
 .reviewbox .review-container img {
@@ -164,6 +167,8 @@
         flex-direction:column;
     }
     .reviewbox-left, .reviewbox-right {
+        flex:1;
+        width:auto;
         margin: 10px 50px 40px 50px;
     }
 }

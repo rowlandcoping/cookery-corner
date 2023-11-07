@@ -185,8 +185,8 @@ padding: 0 20px;
 
 @media screen and (max-width: 436px) {
     #login-container {
-        max-width:240px;
-        min-width:240px;
+        max-width:230px;
+        min-width:230px;
     }
     .form label {
         line-height: 200%;
