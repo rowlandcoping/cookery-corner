@@ -109,7 +109,4 @@
 			</div>
 		</div>
 	</body>
-	<?php
-		include ($analytics);
-	?>
 </html>

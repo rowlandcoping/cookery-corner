@@ -42,7 +42,7 @@
         echo "\"<h2>";
         echo $next['title'];
         echo "</h2></a>";
-        echo "<p><img src=\"/assets/images/recipes/".$next['rec_image']."\"width=\"250\", height=\"200\"></p>";
+        echo "<div class=leftres-image><img src=\"/assets/images/recipes/".$next['rec_image']."\"width=\"250\", height=\"200\"></div>";
         echo "<p>";
         echo $next['description'];
         echo "</p></div>";
@@ -88,4 +88,3 @@
         }
     }
 ?>
-

@@ -5,6 +5,7 @@
     <title>Cookery Corner - For when the cupboard is almost bare</title>
     <link rel="stylesheet" type="text/css" href="/styles/css/universal.css" />
     <link rel="stylesheet" type="text/css" href="/styles/css/home.css" />
+    <?php include ($analytics);	?>
 </head>
 <body>
     <div class="title">

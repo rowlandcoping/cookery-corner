@@ -70,6 +70,7 @@
 			}
 		?>
 	</style>
+    <?php include ($analytics);	?>
 </head>
 <body>
 	<header>

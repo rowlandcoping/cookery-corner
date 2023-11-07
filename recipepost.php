@@ -7,10 +7,8 @@ $latest = "$path"."/includes/latest.php";
 $search = "$path"."/includes/search.php";
 $banner = "$path"."/includes/right_banner.php";
 $analytics = "$path"."/analytics.php";
-$doctype="$path"."/includes/doctype.php";
 
 require_once($config);
-require_once($doctype);
 require_once($process);
 if (isset($_GET['post-slug'])) {$post = getPost($_GET['post-slug']);	}
 require_once($head);

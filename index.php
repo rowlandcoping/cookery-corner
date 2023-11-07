@@ -187,8 +187,5 @@
 				<hr>
 			</div>
 		</div>
-		<?php
-		include ($analytics);
-		?>
 	</body>
 </html>

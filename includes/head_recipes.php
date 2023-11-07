@@ -104,6 +104,7 @@
     </title>
     <link rel="stylesheet" type="text/css" href="/styles/css/universal.css">
     <link rel="stylesheet" type="text/css" href="/styles/css/recipes.css">
+    <?php include ($analytics);	?>
 </head>
 <body>
     <header>

@@ -1,301 +1,298 @@
 /*UNIVERSAL FORMATTING */
-
-body	{
-background-image:url(/assets/backgrounds/wood.jpeg);
-color:#3f3f3f;
+body {
+    background-image:url(/assets/backgrounds/wood.jpeg);
+    color:#3f3f3f;
 }
-div.content, div.ing, div.introtext, div.author, div.general {
-background-image:url(/assets/backgrounds/tea.jpg);
+.content, .ing, .introtext, .author, .general {
+    background-image:url(/assets/backgrounds/tea.jpg);
 }
-div.profile img, div.imgright img, div.mainimage img	{
-width:291px;
+.profile img, .imgright img, .mainimage img {
+    width:291px;
 }
-div.maingen, .general, .gentext, .imgright,.mainaut, .author, .profile, .main,
-.mainimage, .intro, .introtext, .segment, .ing, .content, .first, .leftres	{
-border-radius:6px 6px 6px 6px;
+.maingen, .general, .gentext, .imgright,.mainaut, .author, .profile, .main,
+.mainimage, .intro, .introtext, .segment, .ing, .content, .first, .leftres {
+    border-radius:6px;
 }
-div.title	{
-background-color:#808080;
-padding: 10px;
-margin-bottom:10px;
+.title {
+    background-color:#808080;
+    padding: 10px;
+    margin-bottom:10px;
 }
 
 /*GENERAL PAGES*/
-div.page {
-margin:0px 0px 100px 0px;
+.page {
+margin-bottom: 100px;
 }
-div.maingen	{
-vertical-align:top;
-padding:0px 0px 0px 0px;
-margin:0px 0px 5px 0px;
-overflow: hidden;
+.maingen {
+    vertical-align:top;
+    padding:0;
+    margin-bottom:5px;
+    overflow: hidden;
 }
-div.general	{
-margin: 10px 0px 17px 0px;
-padding: 14px 14px 14px 14px;
-overflow: hidden;
+.general {
+    margin: 10px 0 17px 0;
+    padding: 14px;
+    overflow: hidden;
 }
-div.gentext	{
-padding: 0px 40px 20px 7px;
-margin:0px 300px 0px 0px;
+.gentext {
+    padding: 0;
+    margin:0;
 }
-div.imgright	{
-float:right;
-vertical-align:top;
-text-align:center;
-margin: 0px 10px 0px 0px;
+.imgright {
+    float:right;
+    text-align:center;    
+    margin:20px;
+    margin-top:-30px;
+}
+.imgright img {
+    border-style: ridge;
+    border-color: black;
+    padding:5px;
+    border-radius:5px;
+}
+#recipe-search {
+    display:inline;
+    margin-right:5px;
 }
 
 /*AUTHOR PAGE*/
-
-div.mainaut	{
-vertical-align:top;
-padding:0px 0px 0px 0px;
-margin:0px 0px 5px 0px;
-overflow: hidden;
+.mainaut {
+    padding:0;
+    margin-bottom:5px;
+    overflow: hidden;
 }
-div.author	{
-margin: 10px 0px 18px 0px;
-padding: 8px 8px 8px 8px;
-overflow: hidden;
+.author	{
+    margin: 10px 0 18px 0;
+    padding: 8px;
+    overflow: hidden;
 }
-div.profile	{
-float:left;
-vertical-align:top;
-text-align:center;
-margin: 7px 13px 9px 5px;
-padding: 8px 8px 10px 8px;
-width:350px;
-border-style: inset;
+.profile {
+    float:left;
+    text-align:center;
+    margin: 7px 13px 9px 5px;
+    padding: 8px 8px 10px 8px;
+    width:350px;
+    border-style: inset;
+    border-color: black;
 }
-div.autext	{
-overflow: hidden;
-padding: 8px 8px 5px 8px;
-margin: 6px 9px 0px 9px;
+.autext	{
+    overflow: hidden;
+    padding: 8px 8px 5px 8px;
+    margin: 6px 9px 0 9px;
+}
+#author-divider {
+    display:none;
 }
 
 /*RECIPE PAGE*/
-
-div.intro, .segment	{
-background-image: url(/assets/backgrounds/slate.jpeg);
+.intro, .segment {
+    background-image: url(/assets/backgrounds/slate.jpeg);
 }
-div.main	{
-vertical-align:top;
-padding: 0px 0px 0px 0px;
-margin:0px 0px 5px 0px;
-overflow: hidden;
+.main {
+    padding: 0;
+    margin:0 0 5px 0;
+    overflow: hidden;
 }
-div.mainimage	{
-float:left;
-vertical-align:top;
-text-align:center;
-margin: 7px 16px 9px 5px;
-width:300px
+.mainimage {
+    float:left;
+    text-align:center;
+    margin: 7px 16px 9px 5px;
+    width:300px
 }
-div.intro	{
-margin: 10px 0px 20px 0px;
-padding: 8px 8px 8px 8px;
-overflow: hidden;
+.intro {
+    margin: 10px 0 20px 0;
+    padding: 8px;
+    overflow: hidden;
 }
-div.introtext	{
-overflow: hidden;
-padding: 8px 8px 5px 8px;
-margin: 7px 9px 8px 9px;
+.introtext {
+    overflow: hidden;
+    padding: 8px 8px 5px 8px;
+    margin: 7px 9px 8px 9px;
 }
-div.segment	{
-margin: 20px 0px 20px 0px;
-padding: 8px 8px 8px 8px;
-clear:both;
-overflow: hidden;
+.segment {
+    margin: 20px 0;
+    padding: 8px;
+    clear:both;
+    overflow: hidden;
 }
-div.ing	{
-float:left;
-padding: 10px;
-margin: 7px 19px 7px 9px;
-width:273px;
+.ing {
+    float:left;
+    padding: 10px;
+    margin: 7px 19px 7px 9px;
+    width:273px;
 }
-div.content	{
-overflow: hidden;
-padding: 8px 8px 8px 8px;
-margin: 7px 8px 7px 143px;
+.content {
+    overflow: hidden;
+    padding: 8px;
+    margin: 7px 8px 7px 143px;
 }
-div.ing p	{
-margin:1px 0px 1px 0px;
-font-size:1em;
+.ing p {
+    margin:1px 0;
+    font-size:100%;
 }
-div.content p	{
-margin:6px 0px 6px 0px;
-font-size:1em;
+.content p {
+    margin:6px 0;
+    font-size:100%;
 }
-h3.user	{
-font-style: italic;
-font-size:1.25em;
-color: #1f517c
+.user {
+    font-style: italic;
+    font-size:125%;
+    color: #1f517c;
 }
-div.second p	{
-font-size:1em;
-margin:6px 0px 6px 0px;
+.second p {
+    font-size:100%;
+    margin:6px 0;
 }
-div.second b	{
-font-size:1.1em;
+.second b {
+    font-size:110%;
 }
-div.ing a, .introbar a	{
-text-decoration: none;
-color:#123656;
+.ing a, .introbar a	{
+    text-decoration: none;
+    color:#123656;
 }
-div.ing a:hover, .introbar a:hover	{
-color:#1f517c;
+.ing a:hover, .introbar a:hover	{
+    color:#1f517c;
 }
-a.auth	{
-text-decoration: none;
-color:#1f517c;
+.auth	{
+    text-decoration: none;
+    color:#1f517c;
 }
-a:hover.auth	{
-text-decoration: none;
-color:#1b3c59;
+.auth:hover {
+    text-decoration: none;
+    color:#1b3c59;
 }
 
 /*upper links section*/
-
-ul.introbar	{
-margin:0px 0px 0px 0px;
-padding:0px;
-list-style:none;
-float: left;
-height:33px;
+.introbar {
+    float: left;
+    height:33px;
 }
-ul.introbar li	{
-float: left;
+.introbar li {
+    float: left;
 }
-#serves, #complexity, #category, #cuisine	{
-margin:3px 10px 0px 0px;
+#serves, #complexity, #category, #cuisine {
+    margin:3px 10px 0 0;
 }
-#logserv, #logcomp	{
-margin:0px 7px 0px 10px;
+#logserv, #logcomp {
+    margin:0 7px 0 10px;
 }
-#logcuis	{
-margin:2px 7px 0px 10px;
+#logcuis {
+    margin:2px 7px 0 10px;
 }
 #logcat	{
-margin:0px 7px 3px 10px;
+    margin:0 7px 3px 10px;
 }
-#facebook	{
-margin:0px 10px 2px 50px;
+#facebook {
+    margin:0 10px 2px 50px;
 }
-#insta	{
-margin:0px 10px 3px 0px;
+#insta {
+    margin:0 10px 3px 0px;
 }
-#twitter	{
-margin:2px 10px 0px 0px;
+#twitter {
+    margin:2px 10px 0 0;
 }
 
 /*ratings section*/
-
-ul.review	{	
-margin:0px 0px 0px 0px;
-padding:0px;
-list-style:none;
-float: left;
-height:35px;
+.review	{	
+    float: left;
+    height:35px;
 }
-ul.review li	{
-float: left;
+ul.review li {
+    float: left;
 }
 #user, #rowland	{
-margin:6px 5px 0px 0px;
+    margin:6px 5px 0 0;
 }
-#userrat, #rowrat	{
-margin:6px 25px 0px 0px;
+#userrat, #rowrat {
+margin:6px 25px 0 0;
 }
 
 /*RECIPE LISTINGS*/
-div.search	{
-margin: 9px 0px 0px 0px;
-padding: 0px 0px 0px 0px;
-overflow: hidden;
+.search	{
+    margin-top: 9px;
+    padding: 0;
+    overflow: hidden;
 }
-
-div.leftres, div.divbar, div.navbar, div.divbarempty	{
-background-image: url(/assets/backgrounds/blackboard.jpeg);
-font-family: tuck;
+.leftres, .divbar, .navbar, .divbarempty {
+    background-image: url(/assets/backgrounds/blackboard.jpeg);
+    font-family: tuck;
 }
-div.divbar p, div.divbarempty p	{
-margin: 0px 0px 0px 0px;
-padding: 0px 0px 0px 0px;
-display: inline-block;
+.divbar p, .divbarempty p {
+    margin: 0;
+    padding: 0;
 }
-div.divbar, div.navbar {
-margin: 0px 0px 0px 0px;
-padding: 0px 0px 0px 15px;
-background-color: #0f1f42;
-font-size:3em;
-border-radius: 10px;
-line-height: 50px;
-height:55px;
+.divbar, .navbar {
+    margin: 0;
+    padding: 0 15px;
+    font-size:300%;
+    border-radius: 10px;
+    line-height: 50px;
+    height:55px;
 }
-
-div.divbar {
-color:#EEEEEE;
+.divbar {
+    color:#EEEEEE;
 }
-div.navbar{
-color: #598baf;
+.navbar {
+    color: #598baf;
 }
-div.navbar a{
-text-decoration: none;
-color:#Eeeeee;
+.navbar a {
+    text-decoration: none;
+    color:#Eeeeee;
 }
-div.navbar a:hover	{
-color: #90B0C4;
+.navbar a:hover	{
+    color: #90B0C4;
 }
-
-
-div.divbarempty	{
-margin: 0px 0px 18px 0px;
-padding: 0px 0px 0px 15px;
-background-color: #0f1f42;
-color:#EEEEEE;
-font-size:3em;
-border-radius: 10px;
-line-height: 55px;
-height:55px;
+.divbarempty {
+    margin-bottom: 18px;
+    padding: 0 15px;
+    background-color: #0f1f42;
+    color:#EEEEEE;
+    font-size:300%;
+    border-radius: 10px;
+    line-height: 55px;
+    height:55px;
 }
-div.first	{
-margin: 0px 0px 0px 0px;
-padding: 8px 8px 8px 8px;
-overflow: hidden;
+.first {
+    display:flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 8px;
+    overflow: hidden;
 }
-div.leftres	{
-float:left;
-padding: 12px 12px 12px 12px;
-margin: 10px 30px 10px 0px;
-width:290px;
-height:320px;
+.leftres {
+    padding: 12px;
+    margin: 10px 15px;
+    width:290px;
+    height:320px;
+    text-align:center;
 }
-div.first p	{
-margin:6px 0px 6px 0px;
-font-size:1.5em;
-color: #383838;
-line-height:1;
+.first p {
+    margin:6px 0;
+    font-size:150%;
+    color: #383838;
+    line-height:1;
 }
-div.leftres a	{
-text-decoration: none;
-color:#Eeeeee;
-font-size:2em;
-margin: 0px 0px 0px 0px;
-padding: 18px 0px 18px 0px;
-line-height: 1;
+.leftres a {
+    text-decoration: none;
+    color:#Eeeeee;
+    font-size:200%;
+    margin: 0;
+    padding: 18px 0;
+    line-height: 1;
 }
-div.leftres a:hover	{
-color: #90B0C4;
+.leftres a:hover {
+    color: #90B0C4;
 }
-div.leftres p	{
-color: #eeeeee;
+.leftres p {
+    color: #eeeeee;
 }
-div.leftres img	{
-margin: 0px 0px 8px 18px;
-width:250px;
-height:200px;
-object-fit:cover;
+.leftres-image {
+    margin:8px auto 0 auto;
+    width:250px;
+    height:200px;
+}
+.leftres-image img {
+    object-fit:cover;
 }
 
 /*MOBILE FORMATTING*/
@@ -319,4 +316,73 @@ div.content	{
 width:90%;
 margin: 8px 8px 8px 30px;
 }
+}
+
+@media screen and (max-width: 960px) {
+    .divbar, .navbar {
+        text-align:center;
+    }
+    .first {
+        justify-content:center;
+    }
+    .autext #recipe-search {
+        display:block;
+        margin-bottom:5px;
+    }
+}
+@media screen and (max-width: 870px) {
+    .right {
+        display:none;
+    }
+}
+@media screen and (max-width: 724px) {
+    /*AUTHOR PAGE*/
+    .profile {
+        float:none;
+        margin:20px auto;
+    }
+    .autext, .general {
+        text-align:center;
+    }
+    #author-divider {
+        display:block;
+    }
+    #recipe-search {
+        display:inline;
+        margin-bottom:0;
+    }
+    .imgright {
+        float:none;
+        display:block;
+        margin-top:10px;
+    }
+}
+@media screen and (max-width: 570px) {
+    .divbar {
+        display:flex;
+        height: 110px;
+        align-items:center;
+        justify-content:center;
+    }
+}
+@media screen and (max-width: 434px) {
+    /*GENERAL PAGES*/
+    .imgright {
+        width:90%;
+    }
+    .imgright img {
+        width:90%;
+    }
+
+    /*AUTHOR PAGE*/
+    .profile {
+        width:90%;
+    }
+    .profile img {
+        width:90%;
+    }
+    #recipe-search {
+        display:block;
+        margin-bottom:5px;
+    }
 }

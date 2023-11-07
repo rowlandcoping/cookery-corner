@@ -8,8 +8,9 @@
     $analytics = "$path"."/analytics.php";  
 
     require_once($config); 
-    if (isset($_GET['post-slug'])) {$post = getPost($_GET['post-slug']);}
-    require_once($head);
+    if (isset($_GET['post-slug'])) {
+        $post = getPost($_GET['post-slug']);
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -18,7 +19,7 @@
             <?php require_once($banner);?>
             <div class="maingen">	
                 <div class="general">
-                    <h1>Recipe of the Week<i> (ish)</i></h1>
+                    <h1>Recipe of the Week<em><small>(ish)</small></em></h1>
                     <p>
                         Cookery Corner is all about sharing recipe ideas, and making them as simple as possible.  
                         We try to avoid ingredients you can only find by bribing Jamie Oliver's butler, 
@@ -28,13 +29,15 @@
                     <p>
                         And for people who actually think they can cook I hope there's something for you here too.
                     </p>
+                    <hr>
                     <form method="get" action="search.php">
-                        <p>
+                        <p id="recipe-search">
                             Search for recipe:
-                            <input type="text" name="search" required>
-                            <input type="submit" value="search">
-                        </p>                    
+                        </p> 
+                        <input type="text" name="search" required>
+                        <input type="submit" value="search">                                           
                     </form>
+                    <hr>
                 </div>
                 <?php
                     require($latest);
@@ -42,9 +45,6 @@
             </div>
         </div>
     </body>
-    <?php
-        include ($analytics);
-    ?>
 </html>
 	
 
