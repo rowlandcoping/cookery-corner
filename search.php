@@ -69,7 +69,7 @@
                         } else {
                             echo "<div class=\"divbarempty\"><p>No results found</p></div>";
                         }
-                        echo "div class=\"first\">";
+                        echo "<div class=\"first\">";
                         $bogs=0;
                         foreach ($array as $r) {                            
                             $stmt=$conn->prepare("SELECT titslug, title, rec_image, description FROM recipes where ID=? AND live=1");
