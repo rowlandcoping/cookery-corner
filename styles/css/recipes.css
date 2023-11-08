@@ -6,8 +6,11 @@ body {
 .content, .ing, .introtext, .author, .general {
     background-image:url(/assets/backgrounds/tea.jpg);
 }
-.profile img, .imgright img, .mainimage img {
-    width:350px;
+.profile img {
+    width:291px;
+}
+.mainimage img, .imgright img {
+    width: 350px;
 }
 .maingen, .general, .gentext, .imgright,.mainaut, .author, .profile, .main,
 .mainimage, .intro, .introtext, .segment, .ing, .content, .first, .leftres {

@@ -32,22 +32,17 @@
 				echo "background-color: ".$post['blog_color'].";";
 			}
 			echo "}
-				.blogcont, #history {";
-			if (!empty ($post['textarea_background'])) {
-				echo "background-image: url(/assets/backgrounds/liveblog/".$post['textarea_background'].");";
-			} else {
-				echo "background-color: ".$post['textarea_color'];
-			}
-			if ($post['bgtype']=="cover"){
-				echo "background-size: cover;";
-			}
-			echo "}
-				.year {
-					color:".$post['h_color'].";
-				}
-				.month {
-					color:".$post['text_color'].";
-				}
+				.blogcont, #history {"
+            ;
+            if (!empty ($post['textarea_background'])) {
+                echo "background-image: url(/assets/backgrounds/liveblog/".$post['textarea_background'].");";
+            } else {
+                echo "background-color: ".$post['textarea_color'].";";
+            }
+            if ($post['bgtype']=="cover"){
+                echo "background-size: cover;";
+            }
+            echo"}
 				h2, h3, .user	{
 					color: ".$post['h_color'].";
 				}

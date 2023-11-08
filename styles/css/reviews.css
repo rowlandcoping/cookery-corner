@@ -130,8 +130,8 @@
 
 /*FOR PLYMOUTH REVIEW ONLY*/
 .anchor li {
-    margin: 1px;
-    font-size: 85%;
+    margin: 5px 10px;
+    font-size: 100%;
     list-style-image: url(/assets/logos/anchor.png);
 }
 

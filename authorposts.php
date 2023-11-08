@@ -26,9 +26,9 @@
                         <h3><em><?php echo $postaut['food_pro']; ?></em></h3>
                         <?php
                             if (!empty($postaut['profile_pic'])) {
-                                echo "<img class=\"segment\" src=\"/assets/images/profile/".$postaut['profile_pic']."\" width=\"250\">";
+                                echo "<img src=\"/assets/images/profile/".$postaut['profile_pic']."\">";
                             } else {
-                                echo "<img src=\"/assets/images/testcard.jpeg\" width=\"250\">";
+                                echo "<img src=\"/assets/images/testcard.jpeg\">";
                             }
                         ?>
                     </div>
