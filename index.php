@@ -44,17 +44,17 @@
 							<div id="introtext">
 								<h1>Welcome to Cookery Corner</h1>
 								<p>
-									So glad you could stop by!  I've been, uh, redecorating.
+									Congratulations!  You have found the home of cookery on the internet.
 								</p>
 								<p>
 									Here you will find recipes, cookery tips, fun features and even a very badly written blog by site
 									progenitor <a href="/author/rowland-coping">Rowland Coping</a> himself.
 								</p>
 								<p>
-									It's not a cult of personality any more though, because soon you can all add your favourite recipes and tell Rowland how bad his are too! 
+									Not only that, but you can sign up and add your own recipes as well.  It's like having your own recipe book in your pocket. Sort of. 
 								</p>
 								<p>
-									Not yet mind.  But you can sign up though and get all ready for it.
+									Signing up is easy, as long as the forms work!
 								</p>
 							</div>
 							<div id="login-container">
@@ -90,9 +90,12 @@
 							
 						</div>
 						<div class="recommends">
-							<h3>Rowland Recommends... <a href="/reviews/exotic-meat-review">Exotic Meat Review</a></h3>
+							<h3>Rowland Recommends... <a href="/student-cookery-guide.php">Student Cookery Guide</a></h3>
 							<p>
-								It's like 'My Family and Other Animals', except everything is dead and has been minced into sausages.
+								Are you a student?  Do you need help feeding yourself?  Look no further, it's all right here.
+							</p>
+                            <p>
+								Genuinely, please look no further.  I haven't incorporated this sort of feature in any of the menus so this is literally the only way to access it.
 							</p>
 						</div>
 						<div class="latest">

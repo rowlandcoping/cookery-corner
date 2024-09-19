@@ -15,7 +15,7 @@
     <?php
         //get latest recipes for current page, to a max of however many 'pagination.php' states
         $latest=$conn->prepare("SELECT title, titslug, rec_image, description FROM recipes WHERE live=1 ORDER BY ID DESC LIMIT $offset, $no_of_records_per_page");
-        $latest->execute();				
+        $latest->execute();	
         $product=$latest->get_result();
         $num_results = $product->num_rows;
         //displays latest recipes, top bar and bottom bar (if more than one page)
