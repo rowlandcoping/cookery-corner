@@ -50,7 +50,7 @@
                             <em>It is known that you can't cook anything without the appropriate cooking stuff.</em>
                             <h3><a href="/student-cookery-guide/shopping.php">Shopping</a></h3>
                             <em>In order to begin cooking you first need things to cook.</em>
-                            <h3><a href="/student-cookery-guide/tips.php">Helpful tips</a></h3>
+                            <h3><a href="/student-cookery-guide/helpful-hacks.php">Helpful Hacks</a></h3>
                             <em>Tips, techniques, batch cooking and such like.  Once you know this stuff you know it forever.</em>
                             <h3><a href="/student-cookery-guide/larder.php">Your Larder</a></h3>
                             <em>There are certain things you should always keep on hand</em>

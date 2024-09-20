@@ -81,6 +81,10 @@
                             <h3>Tin Opener</h3>
                             Although no longer an essential, you will find that some of the cheaper supermarket own brand stuff still needs one of these.  Notably Lidl Tuna.
                             <br>NB:  In the likely event you don't have one of these when you need it, it might seem like your knife is a superb alternative.  Using your good kitchen knife in such a way is a bad idea.  Although it may work (assuming no serious injury occurs), your knife will never be the same again and you will forever curse the day.
+                            <h3>Toaster</h3>
+                            Somebody probably needs to get hold of one of these.  You will likely have some sort of grill element in your cooker, but in the fast-paced no-holds-barred cut-throat environment of a student kitchen this item means you can have precious toast ready in an instant, no matter who is using the oven.
+                            <h3>Tupperware Container</h3>
+                            Can efficiently contain anything. Allows stacking of otherwise squidgy items. Can be frozen or microwaved and double as bowl. Crikey!
 
                             <h2>Advanced Equipment</h2>
                             <h3>Oven Gloves</h3>
