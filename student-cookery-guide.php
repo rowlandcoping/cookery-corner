@@ -51,10 +51,10 @@
                             <h3><a href="/student-cookery-guide/shopping.php">Shopping</a></h3>
                             <em>In order to begin cooking you first need things to cook.</em>
                             <h3><a href="/student-cookery-guide/helpful-hacks.php">Helpful Hacks</a></h3>
-                            <em>Tips, techniques, batch cooking and such like.  Once you know this stuff you know it forever.</em>
+                            <em>Helpful advice to ignore, so that I can say 'I told you so' later.</em>
                             <h3><a href="/student-cookery-guide/larder.php">Your Larder</a></h3>
-                            <em>There are certain things you should always keep on hand</em>
-                            <h3><a href="/student-cookery-guide/larder.php">Recipes</a></h3>
+                            <em>There are certain things you should always keep on hand.</em>
+                            <h3><a href="/student-cookery-guide/student-recipes.php">Recipes</a></h3>
                             <em>A bunch of simple recipes to get you started.  Feel free to add your own!</em>
                         </div>
                     </div>

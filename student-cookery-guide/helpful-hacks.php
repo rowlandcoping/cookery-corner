@@ -72,7 +72,20 @@
                             Always have something on hand for those days when you just can't be bothered.  Pasta 'n' sauce, packet noodles, jars of pesto, emergency leftovers, cheap frozen pizza, or even just bread you can toast and drop beans on.  If cooking is a chore, don't cook.  Life is too short and your student years are even shorter.
                             <br>NB: If all else fails you can always have spaghetti and gravy.  It's not as bad as it sounds.
                             <h3>Don't Run Out of Things</h3>
-                            Keep track of the basic essentials in your larder (I mean cupboard or shelf obviously, no student has a larder).  Add them to a list of things you need to buy.  Buy them when you shop.
+                            Keep track of the basic essentials in your larder (I mean cupboard or shelf obviously, no student has a larder). Add them to a list of things you need to buy.  Buy them when you shop.
+                            <h3>Don't Put Anything Metal in a Microwave</h3>
+                            Please don't put anything metal in a microwave.  Or anything that is alive for that matter.  Take my word for this.
+                            <h2>A Word on Eggs</h2>
+                            If you are familiar with this site you will know I have tackled <a href="/reviews/how-to-boil-an-egg-review" target="_blank">this subject</a> before.  However I have learned much over the years, and thought I would share this knowledge.
+                            <h3>Boiling Eggs</h3>
+                            I know, I know.  All I'll say is... get the water boiling first.  Assuming eggs are at room temperature, cook for 4 min 15 seconds for soft boiled, or 5 and a half to 6 minutes for hard boiled (depending on how hard).
+                            <h3>Scrambling Eggs</h3>
+                            Beat the eggs in a mug with a fork.  At this point there is a fast way and a slow way.
+                            Slow Way: melt a knob of butter (or similar) in a pan.  Add the eggs and cook on a very low heat, stirring regularly, until they are just set, for lovely creamy eggs.
+                            Fast Way (based on 2 eggs): add a knob of butter (or similar) and a splash of milk (optional) to the eggs.  Microwave for 40 seconds (do not leave the fork in).  Remove and stir well. If they are not done then keep microwaving for 20 intervals more until they are done (do not leave the fork in.  Did I already say that?).
+                            <h3>Frying Eggs</h3>
+                            Easier said than done.  Here is my favorite way - it uses next to zero oil, takes next to zero time, an is pretty foolproof.  It also impresses your friends.
+                            <br>Over-easy:  Put a very small amount of oil in the pan. Make the pan hot.  Crack the egg into the pan.  Cook until it is just set enough to flip.  Flip it gently.  Leave for about 2-3 seconds (do not press down).  Remove from the pan.  If you want it more well done leave it for longer before removing.
                         </div>
                     </div>
 				</div>
