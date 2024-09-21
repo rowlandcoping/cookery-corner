@@ -57,7 +57,7 @@ body {
     justify-content:space-between;
     align-items:flex-start;
     align-items:center;
-    margin:20px 40px;
+    margin:20px 80px;
 }
 .nav-container h3, .nav-container a {
     margin:0;
@@ -124,6 +124,14 @@ p {
     text-align:center;
     margin: 9px 0 15px 15px;
 }
+.blogimgright p	{
+    margin:4px 2px 2px 2px;
+    padding:4px;
+    border:4px double #c3edfd;
+    background-color:#02096b;
+    color: #c3edfd;
+    font-size:85%;
+}
 .user {
     font-style: italic;
     font-size:125%;
@@ -148,7 +156,7 @@ p {
     margin-top:-33px;
 }
 .linethin {
-    width:90%;
+    width:95%;
     margin:auto;
     background:url(/assets/images/linethin.png) repeat-x;
     height:2px;
@@ -167,6 +175,12 @@ p {
     }
     #history {
         padding: 0 150px;
+    }
+    .nav-container {
+        margin:20px 63px;
+    }
+    .linethin {
+        width:90%;
     }
 }
 @media screen and (max-width: 1228px) {
@@ -229,6 +243,9 @@ p {
     }
     #blog-keywords img {
         display:none;
+    }
+    .nav-container {
+        margin:20px 40px;
     }
 }
 @media screen and (max-width: 600px) {
