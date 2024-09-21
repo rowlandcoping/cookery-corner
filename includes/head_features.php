@@ -4,7 +4,7 @@
     <link rel="canonical" href="https://cookery-corner.co.uk/student-cookery-guide.php" />
     <title>Cookery Corner - Student Cookery Guide</title>
     <link rel="stylesheet" type="text/css" href="/styles/css/universal.css" />
-    <link rel="stylesheet" type="text/css" href="/styles/css/reviews.css" />
+    <link rel="stylesheet" type="text/css" href="/styles/css/features.css" />
     <?php include ($analytics);	?>
 </head>
 <body>

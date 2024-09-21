@@ -20,8 +20,8 @@
 					<div class="homecontent">
 						<!--intro-->
 						<div class ="fltright">
-							<img src="/assets/images/equipment.webp" width="350">
-							<p>The real thing was so much worse than this stock image.</p>
+							<img src="/assets/images/bread.jpg" width="350">
+							<p>Some bread, yesterday.</p>
 						</div>
 						<div class="review">
 							<h1>Cupboard Love</h1>
@@ -43,7 +43,7 @@
                             Onions form a base for pretty much anything.  If you have onions, you're making a start on most recipes.  If you don't like onions I feel bad for you.
                             <h3>Garlic</h3>
                             Most ready meals and processed foods list garlic as an ingredient. This is because it provides instant flavour.
-                            <br>NB: garlic can make your breath smell bad.  Like really bad. Although it is an outstanding ingredient, use it with caution, especially if you're likely to be in proximity of someone you have your eye on.
+                            <br>NB: garlic can make your breath smell bad.  Although it is an outstanding ingredient, use it with caution, especially if you're just about to go out on the pull.
                             <h3>Pasta</h3>
                             You can cook pasta in 10 minutes.  Then you can add things to it.  Hey presto, you've done cooking. Always have pasta.
                             <h3>Tinned Tomatoes</h3>
@@ -53,10 +53,7 @@
                             <br>The Extra Virgin variety is really just for dressings.  I always put a bit in my pasta to add that lovely grassy flavour.
                             <h3>Bread</h3>
                             Bread begats toast.  It incorporates sandwiches and cheese on toast and toasties and many other toast base things.
-                            <h3>Eggs</h3>
-                            It's always useful to have eggs about the place. You can boil, fry, scramble (in a microwave even) or poach (good luck with that) them.
-                            <br>You can also make things like omlettes which are great.  Much like cheese, eggs make everything better.
-                            <h3>I can't believe it's not I can't believe it's not butter</h3>
+                            <h3>I Can't Believe It's Not I Can't Believe It's Not Butter</h3>
                             Buy whatever cheap non-butter containing spread your supermarket has to offer.  Use in combination with toast or bread or crumpets or anything really.
                             <h3>Plain Flour</h3>
                             You can use this to make flatbread, basic sauces and thicken things like stews.  It might not seem like you need it now.  But you probably will.

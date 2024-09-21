@@ -15,47 +15,50 @@
 		<div class="page">
 			<?php require_once($banner); ?>
 			<div class="main">
-				<div class="container">	
-					<!--this one is just a series of boxes maybe add expandable comments for each review-->	
-					<div class="homecontent">
-						<!--intro-->
-						<div class ="fltright">
-							<img src="/assets/images/students.jpg" width="350">
-							<p>Ahhhhhhh students....</p>
-						</div>
-						<div class="review">
-							<h1>Student Cookery Guide</h1>
-							<p>
-								We all know what being a student is all about.  It's about drinking and partying and exploring the limits of acceptable human behaviour.
-							</p>
-							<p>
-								It's about drama and chaos, a journey of self-discovery.
-							</p>
-							<p>
-								It's about accruing crippling debt, acquiring various STDs, and destroying your liver.
-							</p>
-							<p>
-								BUT... at some point every student has to break up their busy day with eating something.  And the price of take-away these days, not to mention the likelihood of scurvey, it's probable that all students will at some point have to suck it up and do some actual cooking.
-							</p>
-                            <p>
-								If that sounds difficult, then FEAR NOT!  Cookery Corner is here to save the day.  Read on, rosy faced future of our nation that you are.
-                            </p>
-						</div>
-                        
-					</div>
-                    <div class="homecontent">
-                        <div class="review">
-                            <h2>Guide to the Guide</h2>
-                            <h3><a href="/student-cookery-guide/equipment.php">Equipment</a></h3>
-                            <em>It is known that you can't cook anything without the appropriate cooking stuff.</em>
-                            <h3><a href="/student-cookery-guide/shopping.php">Shopping</a></h3>
-                            <em>In order to begin cooking you first need things to cook.</em>
-                            <h3><a href="/student-cookery-guide/helpful-hacks.php">Helpful Hacks</a></h3>
-                            <em>Helpful advice to ignore, so that I can say 'I told you so' later.</em>
-                            <h3><a href="/student-cookery-guide/larder.php">Your Larder</a></h3>
-                            <em>There are certain things you should always keep on hand.</em>
-                            <h3><a href="/student-cookery-guide/student-recipes.php">Recipes</a></h3>
-                            <em>A bunch of simple recipes to get you started.  Feel free to add your own!</em>
+				<div id="liveblog-container">	
+					<!--this one is just a series of boxes maybe add expandable comments for each review-->
+                    <div id="content-container">
+                        <div class="blogcont">
+                            <!--intro-->
+                            <div class ="blogimgright">
+                                <img src="/assets/images/students.jpg" width="350">
+                                <p>Ahhhhhhh students....</p>
+                            </div>
+                            <div class="blogentry">
+                                <h1>Student Cookery Guide</h1>
+                                <p>
+                                    We all know what being a student is all about.  It's about drinking and partying and exploring the limits of acceptable human behaviour.
+                                </p>
+                                <p>
+                                    It's about drama and chaos, a journey of self-discovery.
+                                </p>
+                                <p>
+                                    It's about accruing crippling debt, acquiring various STDs, and destroying your liver.
+                                </p>
+                                <p>
+                                    BUT... at some point every student has to break up their busy day with eating something.  And the price of take-away these days, not to mention the likelihood of scurvey, it's probable that all students will at some point have to suck it up and do some actual cooking.
+                                </p>
+                                <p>
+                                    If that sounds difficult, then FEAR NOT!  Cookery Corner is here to save the day with this excellent, thrown-together nonsense.  Read on, rosy faced future of our nation that you are.
+                                </p>
+                            </div>                            
+                        </div>
+                        <div class="blogcont feature-segment">
+                            <div class="blogentry">
+                                <div class="segment">
+                                    <h2>Guide to the Guide</h2>
+                                    <h3><a href="/student-cookery-guide/equipment.php">Equipment</a></h3>
+                                    <p>It is known that you can't cook anything without the appropriate cooking stuff.</p>
+                                    <h3><a href="/student-cookery-guide/shopping.php">Shopping</a></h3>
+                                    <p>In order to begin cooking you first need things to cook.</p>
+                                    <h3><a href="/student-cookery-guide/helpful-hacks.php">Helpful Hacks</a></h3>
+                                    <p>Helpful advice to ignore, so that I can say 'I told you so' later.</p>
+                                    <h3><a href="/student-cookery-guide/larder.php">Your Larder</a></h3>
+                                    <p>There are certain things you should always keep on hand.</p>
+                                    <h3><a href="/student-cookery-guide/student-recipes.php">Recipes</a></h3>
+                                    <p>A bunch of simple recipes to get you started.  Feel free to add your own!</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
 				</div>
