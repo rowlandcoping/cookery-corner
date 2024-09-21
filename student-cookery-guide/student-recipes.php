@@ -51,13 +51,13 @@
                                 <h2>Pasta Dishes</h2>
                                     <p>With pasta dishes if you are having leftovers I recommend re-heating the sauce bit and cooking the pasta you need as you go.</p>
                                     <p>Pasta is really not great re-heated.</p>
-                                    <h3>Italian Sausage Pasta</h3>
+                                    <h3><a href="/recipe/italian-sausage-pasta" target="_blank">Italian Sausage Pasta</a></h3>
                                     <p>So simple, and originally made using sausages from a lovely italian deli down my road.  Nowadays I just chuck anything in there.</p>
-                                    <h3>Chicken and Bacon pasta</h3>
+                                    <h3><a href="/recipe/chicken-bacon-and-tomato-pasta" target="_blank">Chicken and Bacon pasta</a></h3>
                                     <p>The chicken and bacon combo is great and it has a lovely smoky flavour.</p>
                                     <h3><a href="/recipe/chicken-with-lemon-and-tarragon" target="_blank">Chicken with Lemon and Tarragon</a></h3>
                                     <p>Included largely because it is already on this website.</p>
-                                    <h3>Pasta & Pesto</h3>
+                                    <h3>Pasta & Pesto</h3> 
                                     <p>Pesto from a jar. Includes some handy variations to make your life better.</p>
                                     <h3>Spaghetti Bolognese</h3>
                                     <p>If you only take one thing away from this mess of a feature, make it this recipe.  I'll do lasagne too one day, promise.</p>
@@ -79,7 +79,7 @@
                                     <p>A Saturday night special, handed down over generations, from back in the day when there were only four TV channels.  And when people actually watched TV for that matter.</p>
                                     <h3><a href="/recipe/chilli-con-carne" target="_blank">Chilli</a></h3>
                                     <p>It's a very simple recipe really, but you could make it simpler by using a supermarket packet chilli mix rather than all the individual ones.  It won't be near as good though.</p>
-                                    <h3>Student Fahita Wraps</h3>
+                                    <h3>Student Fajita Wraps</h3>
                                     <p>Using only the stuff in your <a href="/student-cookery-guide/larder.php" target="_blank">larder</a>! Say goodbye to expensive and rubbish fahita kits.</p>
                                     <h3>Tray Bake Thing</h3>
                                     <p>This is a regular go-to.  Take a cheap cut of chicken (or whatever), a load of veg, put it in the oven for a while, then eat it.</p>

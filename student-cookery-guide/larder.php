@@ -78,7 +78,7 @@
                                     <p>Invest in a black pepper grinder and buy more black pepper corns to put in it when it runs out.  Use this in everything.</p>
                                     <p><em>NB: If you live in catered halls bring this with you to dinner, so you can make your food actually tastes of something.</em></p>
                                     <h3>Salt</h3>
-                                    <p>Ideally use sea salt rather than pure msg. Either way, use this ingredient very sparingly.</p>
+                                    <p>Ideally use sea salt rather than pure MSG. Either way, use this ingredient very sparingly.</p>
                                     <h3>Oregano</h3>
                                     <p>A strong, fragrent herb, it adds an extra layer of flavour to any tomato sauce and is also great with pretty much any roasted meat.</p>
                                     <h3>Basil</h3>
@@ -86,7 +86,7 @@
                                     <p><em>NB: Oregano and Basil are often found in combination in 'Mixed Herbs'.  You can chuck mixed herbs in about anything.</em></p>
                                     <h3>Cumin</h3>
                                     <p>Cumin is a spice which plays a important role in flavouring curries (could be said to be the taste of curry!).  You can add it to all sorts to add that warm, earthy flavour.</p>
-                                    <p> It is also a key component in a lot of mexican cuisine, for example the fahita kits that cost about billion pounds for a small sachet and 4 tortillas are mostly cumin.</p>
+                                    <p> It is also a key component in a lot of mexican cuisine, for example the fajita kits that cost about billion pounds for a small sachet and 4 tortillas are mostly cumin.</p>
                                     <h3>Paprika</h3>
                                     <p>Paprika is basically ground up red peppers, and is a splendid addition to most soups or stews.  I used to add it to chicken and mushroom pasta 'n' sauce to great effect.</p>
                                     <p>Even better is its sporty cousin smoked paprika, which adds a smokey chipolte flavour to your cooking - but use smoked paprika sparingly, less is more with this one.</p>
