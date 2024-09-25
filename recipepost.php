@@ -29,7 +29,7 @@
     $author->execute();				
     $authres = $author->get_result();
     $res = $authres->fetch_assoc();
-    $name= $res['name'];
+    $aname= $res['name'];
     $aslug= $res['slug'];
 
     //get slug for current recipe number of servings    
@@ -137,7 +137,7 @@
                             <?php echo $post['title']; ?>
                         </h1>
                         <h3 class="user">
-                            <?php echo "<a href=\"/author/".$aslug."\"class=\"auth\">".$name."</a>"; ?>
+                            <?php echo "<a href=\"/author/".$aslug."\"class=\"auth\">".$aname."</a>"; ?>
                         </h3>
                         <hr>
                         <div class="second">
