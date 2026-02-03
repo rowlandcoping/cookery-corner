@@ -1,3 +1,7 @@
 .well-known/
 config.php
+config.php.bak
 rsync-start.txt
+.env
+assets/images/
+assets/backgrounds/
