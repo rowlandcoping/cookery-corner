@@ -77,7 +77,7 @@
 		<div class="title">
 			<banner class="section-banner">
 				<?php
-					if ($post['title'] =="Useless Present Review" || $post['title']=="Present Review Feedback"){
+					if (isset($post) && ($post['title'] =="Useless Present Review" || $post['title']=="Present Review Feedback")){
 						echo "<img src=\"/assets/banners/Reviewsxmas.bmp\" alt=\"Random Reviews\" />";
 					} else {
 						echo "<img src=\"/assets/banners/reviewstitle.png\" alt=\"Random Reviews\" />";

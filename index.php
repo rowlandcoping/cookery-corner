@@ -42,7 +42,7 @@
 					<div id="content-container">
 						<div id="intro-section">
 							<div id="introtext">
-								<h1>Welcome to Cookery Corner</h1>
+								<h1>Welcome to Cockery Corner</h1>
 								<p>
 									Congratulations!  You have found the home of cookery on the internet.
 								</p>
