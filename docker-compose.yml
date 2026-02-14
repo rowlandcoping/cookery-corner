@@ -1,32 +1,17 @@
 services:
   web:
     build: .
-    restart: unless-stopped
     container_name: cookery-corner-web
+    restart: unless-stopped
     ports:
       - "8080:80"
     volumes:
       - ./:/var/www/html
     env_file:
       - .env
-    depends_on:
-      - db
+    networks:
+      - shared-network
 
-  db:
-    image: mysql:8.0
-    restart: unless-stopped
-    container_name: cookery-corner-db
-    env_file:
-      - .env
-    environment:
-      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
-      MYSQL_DATABASE: ${DB_NAME}
-      MYSQL_USER: ${DB_USER}
-      MYSQL_PASSWORD: ${DB_PASS}
-    ports:
-      - "3307:3306"  # Using 3307 so it doesn't conflict with your local MySQL
-    volumes:
-      - db_data:/var/lib/mysql
-
-volumes:
-  db_data:
+networks:
+  shared-network:
+    external: true  # Use existing network
