@@ -62,15 +62,16 @@ $email=$result2['email'];
 $e_request=$result2['e_request'];
 
 if ($e_request=="1"){
-
-$to=$email;
-$subject="Cookery Corner request reviewed";
-$message ="<p>".$message."</p>";
-$headers ="From: <noreply@cookery-corner.co.uk>\r\n";
-$headers.="Content-type: text/html\r\n";
-	
-mail($to, $subject, $message, $headers);
-$message="Response Sent";
+    require($path . "/mailconfig.php");
+    try {
+        $mail = createMailer();
+        $mail->addAddress($email);
+        $mail->Subject = "Cookery Corner request reviewed";
+        $mail->Body    = "<p>".$message."</p>";
+        $mail->send();
+    } catch (Exception $e) {
+        $errormess = "Mailer error: " . $mail->ErrorInfo;
+    }
 }}
 
 ?>

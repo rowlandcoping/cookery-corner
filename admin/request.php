@@ -13,46 +13,51 @@ $return=$path."/admin/admin.php";
 
 require_once($config);
 require_once($head);
+require($path . "/mailconfig.php");
 
 if (isset($_POST['action-request'])) {
 	
-$user_ID= $_POST['user_ID'];
-$issue = $_POST['request'];
-$message = "<p>Request Submitted:</p>
-<p>\"<i>".$issue."</i>\"</p>";
-$admin="1";
-$subject="Request Submitted";
-$type="4";
-$stmt = $conn->prepare("SELECT email, name, slug from users WHERE ID=?");
-$stmt->bind_param("s", $user_ID);
-$stmt->execute();
-$array= $stmt->get_result();
-$result=$array->fetch_assoc();
-$email=$result['email'];
-$user=$result['name'];
-$userslug=$result['slug'];
+    $user_ID= $_POST['user_ID'];
+    $issue = $_POST['request'];
+    $message = "<p>Request Submitted:</p>
+    <p>\"<i>".$issue."</i>\"</p>";
+    $admin="1";
+    $subject="Request Submitted";
+    $type="4";
+    $stmt = $conn->prepare("SELECT email, name, slug from users WHERE ID=?");
+    $stmt->bind_param("s", $user_ID);
+    $stmt->execute();
+    $array= $stmt->get_result();
+    $result=$array->fetch_assoc();
+    $email=$result['email'];
+    $user=$result['name'];
+    $userslug=$result['slug'];
 
-$stmt= $conn->prepare("INSERT INTO notifications (user_ID, recipe_ID, user, userslug, subject, message, type, admin) VALUES (?,?,?,?,?,?,?,?)");
-$stmt->bind_param("ssssssss", $user_ID, $recipe_ID, $user, $userslug, $subject, $message, $type, $admin);
-$stmt->execute();
-
-
-//notification e-mail
-
-$to=$email;
-$subject="Cookery Corner request submitted";
-$message ="<p>You have requested the following:</p>";
-$message .="<p>\"<i>".$issue."</i>\"</p>";
-$message.="<p>One of our team will respond as soon as possible, usually within 48 hours.</p>";
-$headers ="From: <noreply@cookery-corner.co.uk>\r\n";
-$headers.="Content-type: text/html\r\n";
-	
-mail($to, $subject, $message, $headers);
+    $stmt= $conn->prepare("INSERT INTO notifications (user_ID, recipe_ID, user, userslug, subject, message, type, admin) VALUES (?,?,?,?,?,?,?,?)");
+    $stmt->bind_param("ssssssss", $user_ID, $recipe_ID, $user, $userslug, $subject, $message, $type, $admin);
+    $stmt->execute();
 
 
-$message="<h2><span style=\"color:green\">Request Submitted</span></h2>";
-include($return);
-exit();
+    //notification e-mail
+    $mailbody = "<p>You have requested the following:</p>";
+    $mailbody .= "<p>\"<i>" . $issue . "</i>\"</p>";
+    $mailbody .= "<p>One of our team will respond as soon as possible, usually within 48 hours.</p>";
+
+    try {
+        $mail = createMailer();
+        $mail->addAddress($email);
+        $mail->Subject = "Cookery Corner request submitted";
+        $mail->Body    = $mailbody;
+        $mail->send();
+        $message="<h2><span style=\"color:green\">Request Submitted</span></h2>";
+    } catch (Exception $e) {
+        $message = "<h2><span style=\"color:red\">Something went wrong, please try again.</span></h2>";
+        $errormess = "Mailer error: " . $mail->ErrorInfo;
+    }
+    
+
+    include($return);
+    exit();
 }
 ?>
 

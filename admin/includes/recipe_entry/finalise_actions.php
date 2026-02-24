@@ -149,16 +149,21 @@ $stmt->execute();
 //send e-mail notification
 
 if ($e_pending=="1") {
+    require($path . "/mailconfig.php");
 
-$to=$email;
-$subject="Your recipe is being approved";
-$message ="<h4>Thank you for your submission!</h4>";
-$message .="<p>Your recipe \"<a href=\"https://cookery-corner.co.uk/recipe/".$title."\" target=\"_blank\">".$title."</a>\" is now awaiting validation.</p>";
-$message.="<p>If everything is in order it will be live within the next 48 hours.</p>";
-$headers ="From: <noreply@cookery-corner.co.uk>\r\n";
-$headers.="Content-type: text/html\r\n";
-	
-mail($to, $subject, $message, $headers);
+    $mailbody ="<h4>Thank you for your submission!</h4>";
+    $mailbody .="<p>Your recipe \"<a href=\"https://cookery-corner.co.uk/recipe/".$title."\" target=\"_blank\">".$title."</a>\" is now awaiting validation.</p>";
+    $mailbody.="<p>If everything is in order it will be live within the next 48 hours.</p>";
+
+    try {
+        $mail = createMailer();
+        $mail->addAddress($email);
+        $mail->Subject = "Your recipe is being approved";
+        $mail->Body    = $mailbody;
+        $mail->send();
+    } catch (Exception $e) {
+        $errormess = "Mailer error: " . $mail->ErrorInfo;
+    }
 };
 
 

@@ -9,6 +9,7 @@ $imgprocess = "$path"."/admin/includes/imageprocess.php";
 $return = "$path"."/livecontact.php";
 
 require_once($config);
+require($path . "/mailconfig.php");
 
 $honey=$_POST['email'];
 if (!empty($honey)){
@@ -81,18 +82,20 @@ $type='5';
 $admin='1';
 $subject="Live Blog Contact";
 if (!empty($image)) {$imgtext="<p>Image link: <a href=\"/assets/images/liveblog/".$image."\" target=\"_blank\">".$image."</a></p>";}else{$imgtext="";}
-$massage="<p>You have received the Liveblog contribution from ".$name.":</p><p>".$content."</p>".$imgtext;
+$mailbody="<p>You have received the Liveblog contribution from ".$name.":</p><p>".$content."</p>".$imgtext;
 $stmt= $conn->prepare("INSERT INTO notifications (user, slug, title, subject, message, type, admin) VALUES (?,?,?,?,?,?,?)");
-$stmt->bind_param("sssssss", $name, $slug, $origin, $subject, $massage, $type, $admin);
+$stmt->bind_param("sssssss", $name, $slug, $origin, $subject, $mailbody, $type, $admin);
 $stmt->execute();
 
-$email="john.hall@cookery-corner.co.uk";
-$to=$email;
-$message = $massage."<p>Link to image: <a href=\"https://cookery-corner.co.uk/assets/images/liveblog/".$image."\" target=\"_blank\">".$image."</a></p>";
-$headers ="From: <".$email.">\r\n";
-$headers.="Content-type: text/html\r\n";
-	
-mail($to, $subject, $message, $headers);
+try {
+    $mail = createMailer();
+    $mail->addAddress(getenv('MAIL_ADMIN'));
+    $mail->Subject = $subject;
+    $mail->Body    = $mailbody;
+    $mail->send();
+} catch (Exception $e) {
+    error_log("Mailer error: " . $mail->ErrorInfo);
+}
 
 $winner= "Congratulations, you have just achieved a thing.";
 include($return);

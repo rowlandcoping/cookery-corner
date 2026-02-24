@@ -7,6 +7,8 @@ $config = "$path"."/config.php";
 $return="$path"."/contactform.php";
 
 require_once($config);
+require($path . "/mailconfig.php");
+
 $type='5';
 $admin='1';
 $honey=$_POST['email'];
@@ -98,20 +100,21 @@ $stmt = $conn->prepare("INSERT into general_contact (name, subject, email, messa
 
 
 
-$massage="<p>You have received the following message from<br /> ".$name." at ".$email.":</p>".$message;
+$mailbody="<p>You have received the following message from<br /> ".$name." at ".$email.":</p>".$message;
 $stmt= $conn->prepare("INSERT INTO notifications (user, title, subject, message, type, admin) VALUES (?,?,?,?,?,?)");
-$stmt->bind_param("ssssss", $name, $email, $subject, $massage, $type, $admin);
+$stmt->bind_param("ssssss", $name, $email, $subject, $mailbody, $type, $admin);
 $stmt->execute();
 
-$email="john.hall@cookery-corner.co.uk";
-$to=$email;
-$subject=$subject;
-$message = $massage;
-$headers ="From: <".$email.">\r\n";
-$headers.="Content-type: text/html\r\n";
-	
-mail($to, $subject, $message, $headers);
-
+try {
+    $mail = createMailer();
+    $mail->addAddress(getenv('MAIL_ADMIN'));
+    $mail->setFrom($email, $name);
+    $mail->Subject = $subject;
+    $mail->Body    = $mailbody;
+    $mail->send();
+} catch (Exception $e) {
+    error_log("Mailer error: " . $mail->ErrorInfo);
+}
 
 $successmess="Message Submitted <br /> Thank you for your interaction, it's always a thrill!";
 include($return);

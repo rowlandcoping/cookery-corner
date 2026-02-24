@@ -60,15 +60,22 @@ $stmt->bind_param("ssssssssss", $user_ID, $recipe_ID, $user, $userslug, $titslug
 $stmt->execute();
 
 if ($e_urgent=="1") {
-$to=$email;
-$subject="Recipe Needs Updating";
-$message ="The ingredient \"".$ingredient."\" has been removed from Cookery Corner.</p>
-<p>Your recipe \"<a href=\"https://cookery-corner.co.uk/recipe/".$title."\" target=\"_blank\">".$title."</a>\" has been affected.</p>";
-$message.="<p>Please replace the ingredient and re-submit.</p>";
-$headers ="From: <noreply@cookery-corner.co.uk>\r\n";
-$headers.="Content-type: text/html\r\n";
-	
-mail($to, $subject, $message, $headers);
+
+    require($path . "/mailconfig.php");
+
+    $mailbody ="The ingredient \"".$ingredient."\" has been removed from Cookery Corner.</p>
+    <p>Your recipe \"<a href=\"https://cookery-corner.co.uk/recipe/".$title."\" target=\"_blank\">".$title."</a>\" has been affected.</p>";
+    $mailbody.="<p>Please replace the ingredient and re-submit.</p>";
+
+    try {
+        $mail = createMailer();
+        $mail->addAddress($email);
+        $mail->Subject = "Recipe Needs Updating";
+        $mail->Body    = $mailbody;
+        $mail->send();
+    } catch (Exception $e) {
+        $errormess = "Mailer error: " . $mail->ErrorInfo;
+    }
 }
 
 

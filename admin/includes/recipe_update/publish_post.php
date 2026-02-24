@@ -5,6 +5,8 @@ $reviewsubmit ="$path"."/admin/recipe_entry.php";
 
 
 require_once($config);
+require($path . "/mailconfig.php");
+
 //if they hit publish to toggle just have to pull all the edit code back in using the include since header won't work
 if (isset($_GET['publish'])) {
 $post_id=$_GET['publish'];
@@ -58,18 +60,23 @@ $stmt->execute();
 //send notification e-mail
 if ($role!=="admin"){
 	
-if ($e_approval=="1") {
-	
-$to=$email;
-$subject="Your recipe is now live";
-$message ="<h4>Great news!</h4>";
-$message .="<p>Your recipe \"<a href=\"https://cookery-corner.co.uk/recipe/".$titslug."\" target=\"_blank\">".$title."</a>\" is now live!</p>";
-$message.="<p>You should definitely tell all your friends and share it on social media and stuff.</p>";
-$headers ="From: <noreply@cookery-corner.co.uk>\r\n";
-$headers.="Content-type: text/html\r\n";
-	
-mail($to, $subject, $message, $headers);
-}}
+    if ($e_approval=="1") {
+
+        $mailbody ="<h4>Great news!</h4>";
+        $mailbody .="<p>Your recipe \"<a href=\"https://cookery-corner.co.uk/recipe/".$titslug."\" target=\"_blank\">".$title."</a>\" is now live!</p>";
+        $mailbody.="<p>You should definitely tell all your friends and share it on social media and stuff.</p>";
+
+        try {
+            $mail = createMailer();
+            $mail->addAddress($email);
+            $mail->Subject = "Your recipe is now live";
+            $mail->Body    = $mailbody;
+            $mail->send();
+        } catch (Exception $e) {
+            $errormess = "Mailer error: " . $mail->ErrorInfo;
+        }
+    }
+}
 
 include($editpost);
 }
@@ -98,12 +105,12 @@ $e_pending=$result['e_pending'];
 
 
 if ($role==="admin")  {
-$stage="9";
-$message="<p>You have unpublished \"<a href=\"/recipe/".$titslug."\" target=\"_blank\">".$title."</a>\"</p>";
+    $stage="9";
+    $message="<p>You have unpublished \"<a href=\"/recipe/".$titslug."\" target=\"_blank\">".$title."</a>\"</p>";
 }else{
-$stage="8";
-$message="<p>Your recipe \"<a href=\"/recipe/".$titslug."\" target=\"_blank\">".$title."</a>\" is no longer live.</p>
-<p>This is most likely at your request, but if there has been a mistake please <a href=\"/contactform.php\" target=\"_blank\">contact us</a></p>";
+    $stage="8";
+    $message="<p>Your recipe \"<a href=\"/recipe/".$titslug."\" target=\"_blank\">".$title."</a>\" is no longer live.</p>
+    <p>This is most likely at your request, but if there has been a mistake please <a href=\"/contactform.php\" target=\"_blank\">contact us</a></p>";
 }
 
 $stmt = $conn ->prepare ("UPDATE recipes SET live=0, stage=? WHERE ID=?");
@@ -125,17 +132,22 @@ $stmt->execute();
 
 //send notification e-mail
 if ($role!=="admin"){
-if ($e_pending=="1") {
-	
-$to=$email;
-$subject="Your recipe has been unpublished";
-$message ="<p>Your recipe \"<a href=\"https://cookery-corner.co.uk/recipe/".$titslug."\" target=\"_blank\">".$title."</a>\" is no longer live.</p>";
-$message.="<p>This is most likely at your request, but if there has been a mistake please <a href=\"https://cookery-corner.co.uk/contactform.php\" target=\"_blank\">contact us</a></p>";
-$headers ="From: <noreply@cookery-corner.co.uk>\r\n";
-$headers.="Content-type: text/html\r\n";
-	
-mail($to, $subject, $message, $headers);
-}}
+    if ($e_pending=="1") {
+
+        $mailbody ="<p>Your recipe \"<a href=\"https://cookery-corner.co.uk/recipe/".$titslug."\" target=\"_blank\">".$title."</a>\" is no longer live.</p>";
+        $mailbody.="<p>This is most likely at your request, but if there has been a mistake please <a href=\"https://cookery-corner.co.uk/contactform.php\" target=\"_blank\">contact us</a></p>";
+        
+            try {
+            $mail = createMailer();
+            $mail->addAddress($email);
+            $mail->Subject = "Your recipe has been unpublished";
+            $mail->Body    = $mailbody;
+            $mail->send();
+        } catch (Exception $e) {
+            $errormess = "Mailer error: " . $mail->ErrorInfo;
+        }
+    }
+}
 //delete published notification
 $stmt=$conn->prepare("DELETE FROM notifications WHERE type=3 and recipe_ID=?");
 $stmt->bind_param("s", $post_id);

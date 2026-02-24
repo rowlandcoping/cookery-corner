@@ -14,9 +14,9 @@ if (empty($selector) || empty($validator))
 {	$errormess= "link not valid, to reset password request a new one";
 	include ($resetpass);
 	exit();
-}else{
-if ((ctype_xdigit($selector)) !== false && (ctype_xdigit($validator)) !== false) {
-	
+} else {
+if ((ctype_xdigit($selector)) !== false && (ctype_xdigit($validator)) !== false) 
+{	
 ?>
 
 <div style="width: 40%; margin: 20px auto;">
@@ -33,3 +33,4 @@ if ((ctype_xdigit($selector)) !== false && (ctype_xdigit($validator)) !== false)
 </div>
 
 <p><a href="/index.php">Back to Homepage</a></p>
+<?php }} ?>

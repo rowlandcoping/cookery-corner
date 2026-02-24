@@ -4,12 +4,20 @@ ErrorDocument 404 /holding.php
 
 RewriteEngine on
 
-RewriteRule ^sitemap\.xml/?$ sitemap.php
+# Original HTTPS redirect (for direct/non-proxied setups)
 RewriteCond %{SERVER_PORT} 80
 RewriteCond %{HTTP_HOST} ^cookery-corner\.co.uk$ [OR]
 RewriteCond %{HTTP_HOST} ^www\.cookery-corner\.co.uk$
 RewriteRule ^(.*)$ https://cookery-corner.co.uk/$1 [R,L]
 
+# HTTPS redirect for Cloudflare/proxy (checks X-Forwarded-Proto header)
+#RewriteCond %{HTTP:X-Forwarded-Proto} !https
+#RewriteCond %{HTTP_HOST} ^cookery-corner\.co.uk$ [OR]
+#RewriteCond %{HTTP_HOST} ^www\.cookery-corner\.co.uk$
+#RewriteRule ^(.*)$ https://cookery-corner.co.uk/$1 [R=301,L]
+
+
+RewriteRule ^sitemap\.xml/?$ sitemap.php
 RewriteRule ^passwordreset$ includes/reset_request.php
 RewriteRule ^passwordchange$ includes/reset_validate.php
 RewriteRule ^login$ includes/user_authenticate.php

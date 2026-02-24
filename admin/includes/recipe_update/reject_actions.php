@@ -8,9 +8,6 @@ $admin="0";
 $user_ID=$_POST['user_ID'];
 $recipe_ID=$_POST['recipe_ID'];
 
-
-
-
 $stmt = $conn->prepare("SELECT email, name, slug, e_urgent from users WHERE ID=?");
 $stmt->bind_param("s", $user_ID);
 $stmt->execute();
@@ -41,15 +38,21 @@ $stmt->execute();
 
 //send notification e-mail
 if ($e_urgent=="1") {
-$to=$email;
-$subject="Your Recipe has been Rejected";
-$message ="<p>Your recipe \"<a href=\"https://cookery-corner.co.uk/recipe/".$title."\" target=\"_blank\">".$title."</a>\" has been rejected.</p>";
-$message.="<p>Please update as outlined and re-submit</p>";
-$message.= $_POST['message'];
-$headers ="From: <noreply@cookery-corner.co.uk>\r\n";
-$headers.="Content-type: text/html\r\n";
-	
-mail($to, $subject, $message, $headers);
+    require($path . "/mailconfig.php");
+
+    $mailbody ="<p>Your recipe \"<a href=\"https://cookery-corner.co.uk/recipe/".$title."\" target=\"_blank\">".$title."</a>\" has been rejected.</p>";
+    $mailbody.="<p>Please update as outlined and re-submit</p>";
+    $mailbody.= $_POST['message'];
+
+    try {
+        $mail = createMailer();
+        $mail->addAddress($email);
+        $mail->Subject = "Your Recipe has been Rejected";
+        $mail->Body    = $mailbody;
+        $mail->send();
+    } catch (Exception $e) {
+        $errormess = "Mailer error: " . $mail->ErrorInfo;
+    }
 }
 //delete pending notification
 $stmt=$conn->prepare("DELETE FROM notifications WHERE type=2 and recipe_ID=?");
