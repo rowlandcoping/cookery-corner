@@ -6,6 +6,7 @@ require_once '/var/www/html/vendor/autoload.php';
 
 function createMailer(): PHPMailer {
     $mail = new PHPMailer(true);
+    $mail->SMTPAutoTLS = false;
     $mail->isSMTP();
     $mail->Host       = getenv('MAIL_HOST');
     $mail->Port       = (int) getenv('MAIL_PORT');

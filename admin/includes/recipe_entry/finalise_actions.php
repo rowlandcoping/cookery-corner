@@ -65,6 +65,7 @@ $array = $stmt ->get_result();
 $result = $array->fetch_assoc();
 $cat_ID = $result['ID'];
 $stmt= $conn->prepare("INSERT INTO recipe_cat_index (category_ID, recipe_ID) VALUES (?,?)");
+$stmt->bind_param("ss", $cat_ID, $recipe_ID);
 $stmt->execute();
 }
 
@@ -100,6 +101,7 @@ if ($sday=="1" || $sday=="21"||$sday=="31") {
 
 
 
+
 $timestampday = strtotime($timestamp);
 $day = date('l', $timestampday);
 $monthfull =date('F', $timestampday);
@@ -109,12 +111,13 @@ $article_type='recipe';
 $url="/recipe/"."$titslug";
 
 
-$stmt = $conn->prepare("INSERT INTO article_index (recipe_ID, article_type, date, time, 
-								time_24h, day, suffix, day_full, month, month_full, month_short, year) 
-								VALUES (?,?,?,?,?,?,?,?,?,?,?,?)");
-$stmt->bind_param("issssississi", $recipe_ID, $article_type, $date, $ttime, $htime, $broken['day'], $suffix, 
-											$day, $broken['month'], $monthfull, $month, $broken['year']);	
+$stmt = $conn->prepare("INSERT INTO article_index (recipe_ID, article_type, url, date, time, 
+                        time_24h, day, suffix, day_full, month, month_full, month_short, year) 
+                        VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)");
+$stmt->bind_param("isssssississi", $recipe_ID, $article_type, $url, $date, $ttime, $htime, 
+                  $broken['day'], $suffix, $day, $broken['month'], $monthfull, $month, $broken['year']);
 $stmt->execute();
+
 }
 
 $stmt = $conn->prepare("SELECT email, name, slug, e_pending from users WHERE ID=?");

@@ -1,4 +1,4 @@
- <?php 
+<?php 
 //Connection details
 $servername = getenv('DB_HOST');
 $username = getenv('DB_USER');

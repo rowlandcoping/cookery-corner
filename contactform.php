@@ -1,4 +1,8 @@
-<?php session_start();?>
+<?php session_start();
+$successmess = $_SESSION['successmess'] ?? '';
+$messaging = $_SESSION['messaging'] ?? '';
+unset($_SESSION['successmess'], $_SESSION['messaging']);
+?>
 <html>
 	<head>
 		<script src="https://cdn.ckeditor.com/4.17.2/basic/ckeditor.js"></script>

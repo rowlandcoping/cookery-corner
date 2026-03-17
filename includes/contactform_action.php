@@ -1,4 +1,4 @@
-<?php
+<?php session_start();
 
 //maybe use this everywhere
 
@@ -70,15 +70,16 @@ $something = $contchk->fetch_assoc();
 
 
 if (!empty($something['message'])) {
-				$messaging="<p>Message not submitted<br />
-				You have already submitted this message";
-				include($return);
-				exit();
-				}	
-if (empty($message)) { $messaging="<p>Message not submitted</p>
-							<p>You have not entered a message.</p>";
-							include($return);
-							exit();}
+    $_SESSION['messaging'] = "<p>Message not submitted<br />You have already submitted this message";
+    header('Location: /contactform.php');
+    exit();
+}
+
+if (empty($message)) {
+    $_SESSION['messaging'] = "<p>Message not submitted</p><p>You have not entered a message.</p>";
+    header('Location: /contactform.php');
+    exit();
+}
 /*
 if (empty($email)) { echo "<p>Message not submitted</p>
 							<p>You have not provided an e-mail address</p>
@@ -108,7 +109,6 @@ $stmt->execute();
 try {
     $mail = createMailer();
     $mail->addAddress(getenv('MAIL_ADMIN'));
-    $mail->setFrom($email, $name);
     $mail->Subject = $subject;
     $mail->Body    = $mailbody;
     $mail->send();
@@ -116,8 +116,8 @@ try {
     error_log("Mailer error: " . $mail->ErrorInfo);
 }
 
-$successmess="Message Submitted <br /> Thank you for your interaction, it's always a thrill!";
-include($return);
+$_SESSION['successmess'] = "Message Submitted <br /> Thank you for your interaction...";
+header('Location: /contactform.php');
 exit();
 
 

@@ -2,3 +2,4 @@
 rsync-start.txt
 .env
 docker-compose.override.yml
+vendor
