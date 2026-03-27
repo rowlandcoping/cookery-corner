@@ -28,6 +28,7 @@ RUN composer install --no-dev --no-interaction
 ##target=dev (dev only, mounted volume, error logging on)
 FROM base AS dev
 COPY php.ini.dev /usr/local/etc/php/php.ini
+COPY .htaccess.dev /var/www/html/.htaccess
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
