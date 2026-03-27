@@ -8,7 +8,7 @@ $resetpass = "$path"."/reset_password.php";
 $adminlogin = "$path"."/admin/adminlogin.php";
 
 require($config);
-require($path . "/mailconfig.php");
+require_once($path . "/mailconfig.php");
 
 if (isset($_POST['reset-request'])) {
 	

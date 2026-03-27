@@ -35,12 +35,17 @@ if ($_SESSION['role']==="user" & $rec_usr!==$user)
 <label for="Header 1"><h4><span style="color:red;">*</span> Heading</h4></label>
 <p>Heading for the first part of the recipe (eg Preparation, Method, whatever).</p>
 <p><input type="text"  name="step1_head" size="20" value="<?php echo $step1_head;?>" required/></p>
-<label for="Content 1"><h4><span style="color:red;">*</span> Content</label></h4>
-<p><textarea name="step1_content" required rows="15" cols="60"><?php echo $step1_content;?></textarea></p>
-</div>
+<label for="step1_content"><h4><span style="color:red;">*</span> Content</label></h4>
+
+<div id="message-editor" style="height:200px"><?php echo $step1_content; ?></div>
+<textarea name="step1_content" style="display:none"><?php if (!empty($step1_content)) {echo $step1_content;}?></textarea>
 <script>
-            CKEDITOR.replace( 'step1_content' );
+    const quill = new Quill('#message-editor', { theme: 'snow' });
+    document.querySelector('form').addEventListener('submit', function() {
+        document.querySelector('[name=step1_content]').value = quill.root.innerHTML;
+    });
 </script>
+
 <?php
 if ($stage<8) {
 echo "<label for=\"step1-entry\"><input type=\"submit\" class=\"button\" name=\"step1-entry\" value=\"Move on to Next Section\" />";

@@ -1,13 +1,16 @@
 services:
   web:
-    build: .
+    build: 
+      context: .
+      target: prod
     container_name: cookery-corner-web
     restart: unless-stopped
     env_file:
       - .env
+    volumes:
+      - ./assets:/var/www/html/assets
     networks:
       - shared-network
-
 networks:
   shared-network:
-    external: true  # Use existing network
+    external: true

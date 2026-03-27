@@ -1,6 +1,8 @@
 <?php session_start();?>
+<head>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-<script src="https://cdn.ckeditor.com/4.17.2/basic/ckeditor.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/quill@2/dist/quill.snow.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/quill@2/dist/quill.js"></script>
 <html>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -138,10 +140,13 @@ if ($_SESSION['role']==="user" & $rec_usr!=$ID)
 <hr />
 <ul>
 <li id=recipe>Update Profile:
-<p><textarea name="profile"><?php echo $profile;?></textarea></p>
-</ul>
+<div id="message-editor" style="height:200px"><?php echo $profile; ?></div>
+<textarea name="profile" style="display:none"><?php if (!empty($profile)) {echo $profile;}?></textarea>
 <script>
-            CKEDITOR.replace( 'profile' );
+const quill = new Quill('#message-editor', { theme: 'snow' });
+document.querySelector('form').addEventListener('submit', function() { 
+    document.querySelector('[name=profile]').value = quill.root.innerHTML;
+});
 </script>
 
 <p>

@@ -27,11 +27,28 @@ border-radius: 20px 20px 20px 20px;
 ul.form li, ul.form2 li	{
 float:left;
 }
-textarea, input {
+textarea, input, .textentry, .ql-toolbar {
 border-radius: 5px;
 background-color: #180317;
 color: #D4AF37;
 }
+/*Quill toolbar classes*/
+.ql-toolbar .ql-stroke {
+    stroke: #D4AF37;
+}
+
+.ql-toolbar .ql-fill {
+    fill: #D4AF37;
+}
+
+.ql-toolbar .ql-picker {
+    color: #D4AF37;
+}
+
+.ql-toolbar .ql-picker-options {
+    background-color: #180317;
+}
+
 div.form a	{
 color:#903e0d
 }

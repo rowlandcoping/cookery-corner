@@ -5,7 +5,7 @@ $reviewsubmit ="$path"."/admin/recipe_entry.php";
 
 
 require_once($config);
-require($path . "/mailconfig.php");
+require_once($path . "/mailconfig.php");
 
 //if they hit publish to toggle just have to pull all the edit code back in using the include since header won't work
 if (isset($_GET['publish'])) {

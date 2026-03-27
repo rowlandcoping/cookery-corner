@@ -2,10 +2,6 @@
 	
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
 
-<link rel="canonical" href="https://cookery-corner.co.uk/contactform.php" />
-
-<title>Cookery Corner - Live Blog Contact 
-</title>
 <link rel="stylesheet" type="text/css" href="/styles/css/universal.css" />
 <link rel="stylesheet" type="text/css" href="/styles/css/publicform.css" />
 

@@ -13,7 +13,7 @@ $return=$path."/admin/admin.php";
 
 require_once($config);
 require_once($head);
-require($path . "/mailconfig.php");
+require_once($path . "/mailconfig.php");
 
 if (isset($_POST['action-request'])) {
 	

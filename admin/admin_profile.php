@@ -62,7 +62,7 @@ $email=$result2['email'];
 $e_request=$result2['e_request'];
 
 if ($e_request=="1"){
-    require($path . "/mailconfig.php");
+    require_once($path . "/mailconfig.php");
     try {
         $mail = createMailer();
         $mail->addAddress($email);

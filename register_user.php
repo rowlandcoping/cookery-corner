@@ -1,8 +1,9 @@
 <?php session_start();?>
-<script src="https://cdn.ckeditor.com/4.17.2/basic/ckeditor.js"></script>
 <html>
 	<head>
 	<title>Cookery Corner - Register User</title>
+    <link href="https://cdn.jsdelivr.net/npm/quill@2/dist/quill.snow.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/quill@2/dist/quill.js"></script>
 
 <?php
 $path = $_SERVER['DOCUMENT_ROOT'];
@@ -63,16 +64,30 @@ if (isset($_SESSION['public'])) {
 </div>
 <label for="If you can read this then please leave this field blank"><input id="email" type="text"  autocomplete="new-password" name="email" size="40"/></label>
 <div class="list_section">		  
-		  <label><h3>Write a profile:</h3></label>
-		  <textarea name="profile" rows="10" cols="50"></textarea>
-		 <script>
-            CKEDITOR.replace( 'profile');
-</script>
-		 <ul class="form">
-		 <li id="propic"><h3>Profile Pic:</h3></li>
-		 <li id="inputpropic"><input id="profile_pic" type="file" name="profile_pic" /></li>
-		</ul>	
+    <label><h3>Write a profile:</h3></label>
+    <div id="message-editor" class="textentry" style="height:200px"></div>
+        <textarea name="profile" style="display:none" required><?php if (!empty($profile)) {echo $profile;}?></textarea>
+        <script>
+            const quill = new Quill('#message-editor', { theme: 'snow' });
+            document.querySelector('form').addEventListener('submit', function() {
+                const content = quill.root.innerHTML;
+                if (quill.getText().trim().length === 0) {
+                    e.preventDefault();
+                    alert('Please enter a message.');
+                    return;
+                }
+                document.querySelector('[name=profile]').value = quill.root.innerHTML;
+            });
+        </script>
+    </div> 
 </div>
+<div class="list_section">
+    <ul class="form">
+        <li id="propic"><h3>Profile Pic:</h3></li>
+        <li id="inputpropic"><input id="profile_pic" type="file" name="profile_pic" /></li>
+    </ul>
+</div>
+
 <div class="section">			
 <p><input type="submit" class="button" name="reg_user" value="Register" /></p> 
 </div>			

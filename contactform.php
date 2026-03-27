@@ -5,9 +5,10 @@ unset($_SESSION['successmess'], $_SESSION['messaging']);
 ?>
 <html>
 	<head>
-		<script src="https://cdn.ckeditor.com/4.17.2/basic/ckeditor.js"></script>
-	<title>Cookery Corner - Contact</title>
-
+		
+        <title>Cookery Corner - Contact</title>
+        <link href="https://cdn.jsdelivr.net/npm/quill@2/dist/quill.snow.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/quill@2/dist/quill.js"></script>
 <?php
 $path = $_SERVER['DOCUMENT_ROOT'];
 $config = "$path"."/config.php";
@@ -49,9 +50,21 @@ require_once($head);
 
 <div class="section">
 <h3><span style="color:red;">*</span> Message
-</h3><label for="message"><textarea type="text"  name="message"rows="10" cols="50"  required><?php if (!empty($message)) {echo $message;}?></textarea></label>
+</h3>
+
+<div id="message-editor" class="textentry" style="height:200px"></div>
+<textarea name="message" style="display:none"><?php if (!empty($message)) {echo $message;}?></textarea>
 <script>
-            CKEDITOR.replace( 'message');
+const quill = new Quill('#message-editor', { theme: 'snow' });
+document.querySelector('form').addEventListener('submit', function() {
+    const content = quill.root.innerHTML;
+    if (quill.getText().trim().length === 0) {
+        e.preventDefault();
+        alert('Please enter a message.');
+        return;
+    }
+    document.querySelector('[name=message]').value = quill.root.innerHTML;
+});
 </script>
 </div>
 <?php

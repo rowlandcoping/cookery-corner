@@ -3,3 +3,12 @@ rsync-start.txt
 .env
 docker-compose.override.yml
 vendor
+assets/backgrounds/liveblog/
+assets/backgrounds/reviews/
+assets/images/blog/
+assets/images/ingredients/
+assets/images/liveblog/
+assets/images/profile/
+assets/images/recipes/
+assets/images/reviews/
+syncwatch.sh

@@ -74,14 +74,16 @@ echo "<div class=regular2>
 
 <div class=regular2>
 	<h3>Update Information:</h3>
-<p><textarea name="info" rows="5" cols="50"><?php echo $information;?></textarea>
-</p>
-</div>
+<div id="message-editor" style="height:200px"><?php echo $info; ?></div>
+<textarea name="info" style="display:none"><?php if (!empty($info)) {echo $info;}?></textarea>
 <script>
-            CKEDITOR.replace( 'info' );
+const quill = new Quill('#message-editor', { theme: 'snow' });
+document.querySelector('form').addEventListener('submit', function() {
+    document.querySelector('[name=info]').value = quill.root.innerHTML;
+});
 </script>
 
-
+</div>
 
 <?php
 

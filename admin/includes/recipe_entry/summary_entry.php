@@ -26,14 +26,18 @@ if ($_SESSION['role']==="user" & $rec_usr!==$user)
 <input type="hidden" name="recipe_ID" size="1" value="<?php echo $recipe_ID;?>" readonly/>
 <input type="hidden" name="stage" size="1" value="<?php echo $stage;?>" readonly/>
 
-	<h3><label for="summary"><span style="color:red;">*</span> Summary</h3></label>
+<h3><label for="summary"><span style="color:red;">*</span> Summary</h3></label>
 <p>Summarise your recipe and perhaps include serving suggestions or alternatives here.</p>
-<p><textarea name="summary" required rows="10" cols="60"><?php echo $summary;?></textarea>
-</p>
 
+<div id="message-editor" style="height:200px"><?php echo $summary; ?></div>
+<textarea name="summary" style="display:none"><?php if (!empty($summary)) {echo $summary;}?></textarea>
 <script>
-            CKEDITOR.replace( 'summary' );
+    const quill = new Quill('#message-editor', { theme: 'snow' });
+    document.querySelector('form').addEventListener('submit', function() {
+        document.querySelector('[name=summary]').value = quill.root.innerHTML;
+    });
 </script>
+
 <?php
 if ($stage<8) {
 echo "<label for=\"submit-summary\"><input type=\"submit\" class=\"button\" name=\"submit-summary\" value=\"Review and Submit\" />";

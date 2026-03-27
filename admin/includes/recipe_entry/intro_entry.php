@@ -37,10 +37,16 @@ $stage="3";
 <input type="hidden" name="recipe_ID" size="1" value="<?php echo $recipe_ID;?>" readonly/>
 <label for="Intro"><h3><span style="color:red;">*</span> Introdution:</label></h3>
 <p>What's this recipe all about then?</p>
-<textarea name="intro" rows="10" cols="60" required><?php echo $intro;?></textarea>
+
+<div id="message-editor" style="height:200px"><?php echo $intro; ?></div>
+<textarea name="intro" style="display:none"><?php if (!empty($intro)) {echo $intro;}?></textarea>
 <script>
-            CKEDITOR.replace( 'intro');
+    const quill = new Quill('#message-editor', { theme: 'snow' });
+    document.querySelector('form').addEventListener('submit', function() {
+        document.querySelector('[name=intro]').value = quill.root.innerHTML;
+    });
 </script>
+
 </div>
 
 <?php

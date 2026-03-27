@@ -61,7 +61,7 @@ $stmt->execute();
 
 if ($e_urgent=="1") {
 
-    require($path . "/mailconfig.php");
+    require_once($path . "/mailconfig.php");
 
     $mailbody ="The ingredient \"".$ingredient."\" has been removed from Cookery Corner.</p>
     <p>Your recipe \"<a href=\"https://cookery-corner.co.uk/recipe/".$title."\" target=\"_blank\">".$title."</a>\" has been affected.</p>";

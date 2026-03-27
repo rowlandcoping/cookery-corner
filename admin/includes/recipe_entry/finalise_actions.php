@@ -152,7 +152,7 @@ $stmt->execute();
 //send e-mail notification
 
 if ($e_pending=="1") {
-    require($path . "/mailconfig.php");
+    require_once($path . "/mailconfig.php");
 
     $mailbody ="<h4>Thank you for your submission!</h4>";
     $mailbody .="<p>Your recipe \"<a href=\"https://cookery-corner.co.uk/recipe/".$title."\" target=\"_blank\">".$title."</a>\" is now awaiting validation.</p>";

@@ -1,6 +1,8 @@
 <?php session_start();?>
+<head>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-<script src="https://cdn.ckeditor.com/4.17.2/basic/ckeditor.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/quill@2/dist/quill.snow.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/quill@2/dist/quill.js"></script>
 <html>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -66,7 +68,6 @@ function makeservSlug(String $string){
 	return $serslug;
 }
 ?>
-<script src="https://cdn.ckeditor.com/4.17.2/standard/ckeditor.js"></script>
 
 
 <body>

@@ -1,6 +1,8 @@
 <?php session_start();?>
+<head>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-<script src="https://cdn.ckeditor.com/4.17.2/standard/ckeditor.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/quill@2/dist/quill.snow.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/quill@2/dist/quill.js"></script>
 <html>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -62,14 +64,17 @@ echo "<h2>Update <a href=\"/cuisine/".$cuisine."\" target=\"_blank\" rel=\"noref
 <div class=regular2>
 	<h3>Update Information:</h3>
 <p>Update general info about this category.</p>
-<p><textarea name="description" rows="10" cols="60"><?php echo $description;?></textarea>
-</p>
-</div>
-<script>
-            CKEDITOR.replace( 'description' );
-</script>
-</div>
 
+<div id="message-editor" style="height:200px"><?php echo $description; ?></div>
+<textarea name="description" style="display:none" required><?php if (!empty($description)) {echo $description;}?></textarea>
+<script>
+const quill = new Quill('#message-editor', { theme: 'snow' });
+document.querySelector('form').addEventListener('submit', function() {
+    document.querySelector('[name=description]').value = quill.root.innerHTML;
+});
+</script>
+
+</div>
 
 <?php
 

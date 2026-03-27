@@ -30,13 +30,17 @@ if ($_SESSION['role']==="user" & $rec_usr!==$user)
 	<h3>Recipe Part 3 (optional)</h3>
 	<p>Use this part for any additional steps and serving instructions</p>
 
-<label for="Header 3"><h4>Heading</label></h4>
+<label for="step3_head"><h4>Heading</label></h4>
 <p><input type="text"  name="step3_head" size="20" value="<?php echo $step3_head;?>"></p>
-<label for="Content 3"><h4>Content</label></h4>
-<p><textarea name="step3_content" rows="15" cols="60"><?php echo $step3_content;?></textarea>
-</p>
+<label for="step3_content"><h4>Content</label></h4>
+
+<div id="message-editor" style="height:200px"><?php echo $step3_content; ?></div>
+<textarea name="step3_content" style="display:none"><?php if (!empty($step3_content)) {echo $step3_content;}?></textarea>
 <script>
-            CKEDITOR.replace( 'step3_content' );
+    const quill = new Quill('#message-editor', { theme: 'snow' });
+    document.querySelector('form').addEventListener('submit', function() {
+        document.querySelector('[name=step3_content]').value = quill.root.innerHTML;
+    });
 </script>
 
 <?php

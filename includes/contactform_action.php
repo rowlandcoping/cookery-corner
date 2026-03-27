@@ -7,7 +7,7 @@ $config = "$path"."/config.php";
 $return="$path"."/contactform.php";
 
 require_once($config);
-require($path . "/mailconfig.php");
+require_once($path . "/mailconfig.php");
 
 $type='5';
 $admin='1';

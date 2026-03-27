@@ -9,7 +9,7 @@ $imgprocess = "$path"."/admin/includes/imageprocess.php";
 $return = "$path"."/livecontact.php";
 
 require_once($config);
-require($path . "/mailconfig.php");
+require_once($path . "/mailconfig.php");
 
 $honey=$_POST['email'];
 if (!empty($honey)){
