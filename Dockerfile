@@ -1,4 +1,4 @@
-FROM php:8.3-apache AS base
+FROM php:apache AS base
 WORKDIR /var/www/html
 # Enable Apache mod_rewrite
 RUN a2enmod rewrite
